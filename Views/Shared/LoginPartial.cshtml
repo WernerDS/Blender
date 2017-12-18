@@ -6,12 +6,12 @@
 
 @if (SignInManager.IsSignedIn(User))
 {
-	<ul class="navbar-nav mx-auto">
-		<li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li>
+	<ul class="navbar-nav mr-auto">
+<!-- 		<li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li> -->
 		<li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
-		<li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+		<li class="nav-item"><a class="nav-link" href="/my-services">My Services</a></li>
 		<li class="nav-item"><a class="nav-link" href="/my-blends">My Blends</a></li>
-		<li class="nav-item"><a class="nav-link" href="/activity">Activity</a></li>
+<!-- 		<li class="nav-item"><a class="nav-link" href="/activity">Activity</a></li> -->
   	</ul>
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="form-inline">
 	    <ul class="navbar-nav">
@@ -20,7 +20,7 @@
 		          <img class="avatar" src="~/images/avatar.jpg"> @UserManager.GetUserName(User) <i class="fa fa-chevron-down"></i>
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="/services">My Services</a>
+		          <a class="dropdown-item" href="/my-services">My Services</a>
 		          <a class="dropdown-item" href="/my-blends">My Blends</a>
 		          <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit();">Sign Out</a>
 		        </div>

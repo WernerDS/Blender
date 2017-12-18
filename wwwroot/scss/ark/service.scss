@@ -9,10 +9,11 @@
     li {
 	    display: block;
 	    padding: $spacer $spacer $spacer ($spacer*6);
-	    background: $white;
+	    //background: $white;
 	    border-radius: $border-radius-lg;
 	    position: relative;
 	    margin-bottom: $spacer;
+	    border: $border-width solid $border-color;
 	    div {
 		    position: absolute;
 		    left: $spacer;

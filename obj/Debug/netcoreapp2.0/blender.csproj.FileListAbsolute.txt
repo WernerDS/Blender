@@ -10,3 +10,15 @@
 /Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.AssemblyInfo.cs
 /Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.dll
 /Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.pdb
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/app.db
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/blender.deps.json
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/blender.runtimeconfig.json
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/blender.runtimeconfig.dev.json
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/blender.dll
+/Users/wernergriesel/Projects/Blender/bin/Debug/netcoreapp2.0/blender.pdb
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/blender.csproj.CoreCompileInputs.cache
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/blender.AssemblyInfoInputs.cache
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/blender.AssemblyInfo.cs
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/blender.dll
+/Users/wernergriesel/Projects/Blender/obj/Debug/netcoreapp2.0/blender.pdb

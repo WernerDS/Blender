@@ -1,5 +1,17 @@
-.back-btn {
+.top-left-btn {
 	position: absolute;
-	top: 0;
+	top: -56px;
 	left: 15px;
+	z-index: 2;
+}
+.top-right-btn {
+	position: absolute;
+	top: -56px;
+	right: 15px;
+	z-index: 2;
+}
+
+.btn {
+	border-radius: 4rem;
+	min-width: 100px;
 }

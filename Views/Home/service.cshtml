@@ -4,16 +4,20 @@
 
 <section class="section pri-gradient-darker">
 	<div class="container text-white text-center">
-		<a href="/new-blend" class="btn btn-outline-light btn-sm float-right"><i class="fa fa-plus"></i> New Blend</a>
-		<a href="/services" class="btn btn-outline-light btn-sm float-left"><i class="fa fa-chevron-left"></i> Back</a>
+		<a href="/my-services" class="btn btn-outline-light top-left-btn"><i class="fas fa-chevron-left"></i> My Services</a>
+		<a href="/search" class="btn btn-outline-light top-right-btn"><i class="fas fa-plus"></i> New Service</a>
+		
 		<div class="row">
 			<div class="col">
 				<i class="fab fa-freebsd fa-5x"></i>
 				<h1 class="display-4 mt-4">@ViewData["Title"]</h1>
-				<div class="switch-toggle-lg" id="sa-funtion">
-					<input type="checkbox" id="switch" checked /><label for="switch">Toggle</label>
-				</div>
-				<div class="mt-4"><div class="badge badge-pill badge-dark">Created Dec 15, 2017 08:48 am</div></div>
+				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created Dec 15, 2017 08:48 am</div></div>
+				
+				<label class="switch" id="switch-funtion">
+					<input type="checkbox" checked>
+					<span class="slider round"></span>
+				</label>
+				
 			</div>
 		</div>
 	</div>
@@ -41,7 +45,7 @@
 			<div class="card">
 				<div class="card-body text-center">
 					<div class="display-2 text-primary">0</div>
-					<h3 class="mb-0">Feeds</h3>
+					<h3 class="mb-0">Blends</h3>
 				</div>
 			</div>
 		</div>
@@ -92,3 +96,31 @@
 		</div>
 	</div>
 </div>
+
+
+@section Scripts {
+	<script src="~/js/sweetalert2.min.js"></script>
+	<script>
+		 // Warning Message with function
+        $('#switch-funtion').click(function(){
+            swal({
+                title: 'Are you sure?',
+                text: 'You will not be able to recover this imaginary service!',
+                type: 'warning',
+                showCancelButton: true,
+                buttonsStyling: false,
+                confirmButtonClass: 'btn btn-danger',
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonClass: 'btn btn-secondary'
+            }).then(function(){
+                swal({
+                    title: 'Fine!',
+                    text: 'You will not be able to recover this imaginary service!',
+                    type: 'success',
+                    buttonsStyling: false,
+                    confirmButtonClass: 'btn btn-secondary'
+                });
+            });
+        });
+	</script>
+}

@@ -2,29 +2,6 @@
     ViewData["Title"] = "New Blend";
 }
 
-<section class="section">
-	<div class="container">
-		<ol>
-			<li>Mix <a href=""><i class="fa fa-plus"></i></a> with <a href=""><i class="fa fa-plus"></i></a></li>
-			<li>Select Service <i class="icon-blender"></i> OR Setup New Service <i class="fa fa-plus"></i></li>
-			<li>Mix <i class="icon-blender"></i> with <a href=""><i class="fa fa-plus"></i></a></li>
-			<li>Select Service <i class="icon-blender"></i> OR Setup New Service <i class="fa fa-plus"></i></li>
-			<li>Integration: <i class="icon-blender"></i> - <a href=""><i class="fas fa-ellipsis-h"></i></a> - <i class="icon-blender"></i></li>
-			<li>Integration: <i class="icon-blender"></i> - <i class="fas fa-ellipsis-h"></i> - <i class="icon-blender"></i></li>
-			<li>Review: Mix <i class="icon-blender"></i> - <i class="fas fa-ellipsis-h"></i> - <i class="icon-blender"></i> - <a href="">Finish</a></li>
-			<li><i class="icon-blender"></i> - <i class="fas fa-ellipsis-h"></i> - <i class="icon-blender"></i></i>
-				<ul>
-					<li>Toggle <a href="">ON</a></li>
-					<li>Created on Dec 16 2017</li>
-					<li>Never run</li>
-					<li>This Applet usually runs within a few seconds</li>
-					<li><a href="">Check Now</a></li>
-					<li><a href=""><i class="fa fa-pencil-alt"></i> Edit</a></li>
-				</ul>
-			</li>
-		</ol>
-	</div>
-</section>
 
 <section id="stepOne" class="section">
 	<div class="container text-center">
@@ -35,9 +12,8 @@
 				<div>Select Service</div>
 			</a>
 			<a href="javascript:void(0)" class="integration">
-				<i class="fas fa-ellipsis-h fa-3x service-logo"></i>
+				<i class="fas fa-ellipsis-h fa-2x service-logo"></i>
 			</a>
-			<span class="connection"></span>
 			<a href="javascript:void(0)" class="service">
 				<i class="fas fa-plus-circle fa-4x service-logo"></i>
 				<div>Select Service</div>
@@ -67,6 +43,13 @@
 				</a>
 			</li>
 			<li>
+				<a href="javascript:void(0)">
+					<i class="fab fa-codepen fa-3x service-logo"></i>
+					<div class="feed-name">Third Service Name</div>
+					<div class="state"><i class="fa fa-circle fa-xs"></i> On</div>
+				</a>
+			</li>
+			<li>
 				<a href="javascript:void(0)" class="disabled">
 					<i class="fab fa-grunt fa-3x service-logo"></i>
 					<div class="feed-name">Bidvest McCarthy Toyota</div>
@@ -92,7 +75,7 @@
 				<div>My Service Name</div>
 			</div>
 			<a href="javascript:void(0)" class="integration">
-				<i class="fas fa-ellipsis-h fa-3x service-logo"></i>
+				<i class="fas fa-ellipsis-h fa-2x service-logo"></i>
 			</a>
 			<a href="javascript:void(0)" class="service">
 				<i class="fas fa-plus-circle fa-4x service-logo"></i>
@@ -123,6 +106,13 @@
 				</a>
 			</li>
 			<li>
+				<a href="javascript:void(0)">
+					<i class="fab fa-codepen fa-3x service-logo"></i>
+					<div class="feed-name">Third Service Name</div>
+					<div class="state"><i class="fa fa-circle fa-xs"></i> On</div>
+				</a>
+			</li>
+			<li>
 				<a href="javascript:void(0)" class="disabled">
 					<i class="fab fa-grunt fa-3x service-logo"></i>
 					<div class="feed-name">Bidvest McCarthy Toyota</div>
@@ -148,7 +138,7 @@
 				<div>My Service Name</div>
 			</div>
 			<a href="javascript:void(0)" class="integration">
-				<i class="fas fa-ellipsis-h fa-3x service-logo"></i>
+				<i class="fas fa-ellipsis-h fa-2x service-logo"></i>
 			</a>
 			<div class="service selected">
 				<i class="fab fa-grav fa-4x service-logo"></i>
@@ -165,19 +155,19 @@
 		
 		<ul class="list integration">
 			<li>
-				<a href="javascript:void(0)">
+				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Use latest changes">
 					<i class="fas fa-clock fa-3x service-logo"></i>
 					<div class="feed-name">Use Latest</div>
 				</a>
 			</li>
 			<li>
-				<a href="javascript:void(0)">
+				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Overwrite with latest">
 					<i class="fas fa-copy fa-3x service-logo"></i>
 					<div class="feed-name">Always Import</div>
 				</a>
 			</li>
 			<li>
-				<a href="javascript:void(0)">
+				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Keep changes">
 					<i class="fas fa-tasks fa-3x service-logo"></i>
 					<div class="feed-name">Keep changes</div>
 				</a>
@@ -188,62 +178,89 @@
 
 <section id="stepSeven" class="section">
 	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">7. Review</div>
-		<div class="blend-services active">
+		<div class="badge badge-pill badge-secondary mb-4">7. Review and Finish</div>
+		
+		<div class="blend-services active mb-4">
 			<div class="service selected">
 				<i class="fab fa-freebsd fa-4x service-logo"></i>
 				<div>My Service Name</div>
 			</div>
 			<div class="integration selected">
-				<i class="fas fa-copy fa-3x service-logo"></i>
+				<i class="fas fa-copy fa-2x service-logo"></i>
 			</div>
 			<div class="service selected">
 				<i class="fab fa-grav fa-4x service-logo"></i>
 				<div>Other Service Name</div>
 			</div>
 		</div>
+		
+		<h3>Name your creation</h3>
+		<input type="text" class="form-control form-control-lg" id="" placeholder="ex. Cocktail Mix...">
+		
 		<div class="text-center mt-4">
-        	<a href="javascript:void(0)" class="btn btn-primary" id="finialise">Finish</a>
+        	<a href="/blend" class="btn btn-primary">Finish</a>
 		</div>
 	</div>
 </section>
 
-<section id="stepFinal" class="section">
-	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">8. Finish</div>
-		<div class="row">
-			<div class="col-md-8 mx-auto">
-				<div class="card mb-4">
-					<div class="card-body">
-						<div class="blend-services active">
-							<div class="service selected">
-								<i class="fab fa-freebsd fa-4x service-logo"></i>
-								<div>My Service Name</div>
-							</div>
-							<div class="connection"></div>
-							<div class="service selected">
-								<i class="fab fa-grav fa-4x service-logo"></i>
-								<div>Other Service Name</div>
-							</div>
-						</div>
-					</div>
-					<div class="card-footer">
-						<ul>
-							<li>Toggle <a href="">ON</a></li>
-							<li>Created on Dec 16 2017</li>
-							<li>Never run</li>
-							<li>This Applet usually runs within a few seconds</li>
-							<li><a href="">Check Now</a></li>
-							<li><a href=""><i class="fa fa-pencil-alt"></i> Edit</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 
 @section Scripts {
+	<script src="~/js/bootstrap-notify.min.js"></script>
+	<script>
+        function notify(from, align, icon, type, animIn, animOut){
+            $.notify({
+                icon: icon,
+                title: 'You mixed up a new blend!',
+                message: '',
+                url: ''
+            },{
+                element: 'body',
+                type: type,
+                allow_dismiss: true,
+                placement: {
+                    from: from,
+                    align: align
+                },
+                offset: {
+                    x: 20,
+                    y: 0
+                },
+                spacing: 10,
+                z_index: 1031,
+                delay: 2500,
+                timer: 1000,
+                url_target: '_blank',
+                mouse_over: false,
+                animate: {
+                    enter: animIn,
+                    exit: animOut
+                },
+                template:   '<div data-notify="container" class="alert alert-dismissible alert-{0} alert--notify" role="alert">' +
+                                //'<span data-notify="icon"></span> ' +
+                                //'<span data-notify="title">{1}</span> ' +
+                                //'<span data-notify="message">{2}</span>' +
+                                //'<div class="progress" data-notify="progressbar">' +
+                                //    '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                                //'</div>' +
+                                //'<a href="{3}" target="{4}" data-notify="url"></a>' +
+                                //'<button type="button" aria-hidden="true" data-notify="dismiss" class="close"><span>×</span></button>' +
+                                '<span class="display-4" data-notify="title">{1}</span>' +
+                            '</div>'
+            });
+        }
+
+        $('#finialise').click(function(e){
+            e.preventDefault();
+            var nFrom = $(this).attr('data-from');
+            var nAlign = $(this).attr('data-align');
+            var nIcons = $(this).attr('data-icon');
+            var nType = $(this).attr('data-type');
+            var nAnimIn = $(this).attr('data-animation-in');
+            var nAnimOut = $(this).attr('data-animation-out');
+
+            notify(nFrom, nAlign, nIcons, nType, nAnimIn, nAnimOut);
+        });
+    </script>
 	<script>
 		$('#searchService a').click( function() {
 		    $('#connectHere').removeClass('d-none')

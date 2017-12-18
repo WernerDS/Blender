@@ -1,0 +1,29 @@
+.my-blend {
+	.blend-services {
+		.service,
+		.integration {
+			background: transparent;
+			border: $border-width solid rgba($white, 0.2);
+			div {
+			    color: $white;
+			}
+		}
+	}
+}
+
+.tab-container {
+	margin-top: -41px;
+	.nav-tabs {
+		border: none;
+		.nav-link {
+			border: none;
+			color: $white;
+			&:before {
+				background-color: transparent;
+			}
+			&.active {
+				color: $body-color;
+			}
+		}
+	}
+}

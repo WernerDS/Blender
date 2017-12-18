@@ -29,27 +29,61 @@
 		}
 	}
 	.integration {
-		width: 90px;
-		height: 90px;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
 		.service-logo {
-			height: 90px;
-		    line-height: 90px;
+			height: 55px;
+		    line-height: 55px;
+		}
+		&.selected {
+			margin: 0 50px;
+			position: relative;
+			&:before,
+			&:after {
+				content: "";
+			    position: absolute;
+			    width: 50px;
+				height: 8px;
+				top: calc(50% - 4px);
+			    display: block;
+			    -webkit-mask: url("../images/arrow.svg");
+			    mask: url("../images/arrow.svg");
+			    transition-property: opacity,transform;
+			    transition-duration: .5s;
+			    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+			    transition-delay: .3s;
+			    will-change: opacity,transform;
+				background: $border-color;
+				animation: move-arrows .5s linear infinite;
+		    }
+		    &:before {
+			    left: -54px;
+			}
+			&:after {
+				right: -54px;
+			}
 		}
 	}
 
 	.connection {
+		margin: 0 50px;
 		position: relative;
-		width: 100px;
 		display: inline-block;
-		top: -40px;
-		&:before {
+		width: 52px;
+		height: 52px;
+		border-radius: 50%;
+		border: $border-width solid rgba($white, 0.2);
+		line-height: 60px;
+		top: -20px;
+		&:before,
+		&:after {
 			content: "";
 		    position: absolute;
-		    width: 100%;
-		    height: 8px;
+		    width: 50px;
+			height: 8px;
+			top: calc(50% - 4px);
 		    display: block;
-		    top: 0;
-		    left: 0;
 		    -webkit-mask: url("../images/arrow.svg");
 		    mask: url("../images/arrow.svg");
 		    transition-property: opacity,transform;
@@ -60,27 +94,15 @@
 			background: $border-color;
 			animation: move-arrows .5s linear infinite;
 	    }
+	    &:before {
+		    left: -54px;
+		}
+		&:after {
+			right: -54px;
+		}
 	}
 }
 
-#stepFinal {
-	.blend-services {
-		.service,
-		.integration {
-			border-color: $success;
-			background: $success;
-			.service-logo,
-			div {
-				color: $white;
-			}
-		}
-		.connection {
-			&:before {
-				background: $success;
-		    }
-		}
-	}
-}
 
 @keyframes move-arrows {
 	to {
