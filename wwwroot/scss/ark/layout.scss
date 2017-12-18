@@ -9,6 +9,9 @@ body {
 }
 
 // Navigation
+.fixed-top {
+	border-bottom: 1px solid $border-color;
+}
 .avatar {
     -webkit-flex-shrink: 0;
     -moz-flex-shrink: 0;

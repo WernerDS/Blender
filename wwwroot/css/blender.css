@@ -8628,6 +8628,9 @@ body {
 .container {
   position: relative; }
 
+.fixed-top {
+  border-bottom: 1px solid #e9ecef; }
+
 .avatar {
   -webkit-flex-shrink: 0;
   -moz-flex-shrink: 0;
@@ -8704,6 +8707,71 @@ header,
     top: 0;
     left: 0; }
 
+.floater {
+  position: relative;
+  overflow: hidden; }
+
+.floater .inner {
+  white-space: nowrap;
+  transition: all 0.2s ease-in-out;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform-style: preserve-3d; }
+
+.floater .inner.slide {
+  transform: translate(0);
+  animation: slide 30s linear infinite;
+  transform-style: preserve-3d; }
+
+.floater .inner .wrapping {
+  display: inline-flex;
+  align-items: center; }
+
+.floater .inner .wrapping span {
+  display: block;
+  margin: 0 40px;
+  min-width: 70px;
+  opacity: 0; }
+
+.floater .inner.slide .wrapping span {
+  opacity: 1;
+  animation: fadeIn 2s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.floater:before,
+.floater:after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  width: 100px;
+  height: 150px;
+  z-index: 100;
+  pointer-events: none; }
+
+.floater:before {
+  left: 0;
+  background-image: linear-gradient(90deg, #fff 0%, transparent 100%); }
+
+.floater:after {
+  right: 0;
+  background-image: linear-gradient(90deg, transparent 0%, #fff 100%); }
+
+@media (min-width: 768px) {
+  .floater:before,
+  .floater:after {
+    width: 200px; } }
+
+@keyframes slide {
+  0% {
+    transform: translate(0); }
+  100% {
+    transform: translate(-2400px, 0); } }
+
 .blend-services {
   position: relative; }
   .blend-services .service,
@@ -8733,6 +8801,12 @@ header,
       .blend-services .service.selected div,
       .blend-services .integration.selected div {
         color: #495057; }
+    .blend-services .service.check,
+    .blend-services .integration.check {
+      border-color: #fff; }
+    .blend-services .service.error,
+    .blend-services .integration.error {
+      animation: blink .5s step-end infinite alternate; }
   .blend-services .integration {
     width: 60px;
     height: 60px;
@@ -8773,7 +8847,7 @@ header,
     border: 2px solid rgba(255, 255, 255, 0.2);
     line-height: 60px;
     top: -20px; }
-    .blend-services .connection:before, .blend-services .connection:after {
+    .blend-services .connection.left-check:before {
       content: "";
       position: absolute;
       width: 50px;
@@ -8788,21 +8862,36 @@ header,
       transition-delay: .3s;
       will-change: opacity,transform;
       background: #e9ecef;
-      animation: move-arrows .5s linear infinite; }
-    .blend-services .connection:before {
+      animation: move-arrows .5s linear infinite;
       left: -54px; }
-    .blend-services .connection:after {
+    .blend-services .connection.right-check:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 8px;
+      top: calc(50% - 4px);
+      display: block;
+      -webkit-mask: url("../images/arrow.svg");
+      mask: url("../images/arrow.svg");
+      transition-property: opacity,transform;
+      transition-duration: .5s;
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-delay: .3s;
+      will-change: opacity,transform;
+      background: #e9ecef;
+      animation: move-arrows .5s linear infinite;
       right: -54px; }
+    .blend-services .connection.check {
+      border-color: #fff; }
 
 @keyframes move-arrows {
   to {
     -webkit-mask-position: 11px 0;
     mask-position: 11px 0; } }
 
-@keyframes move-arrows-delayed {
-  to {
-    -webkit-mask-position: 330px 0;
-    mask-position: 330px 0; } }
+@keyframes blink {
+  50% {
+    border-color: rgba(255, 255, 255, 0.6); } }
 
 .page-loader {
   width: 100%;

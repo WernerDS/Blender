@@ -27,6 +27,12 @@
 				color: $body-color;
 			}
 		}
+		&.check {
+			border-color: $white;
+		}
+		&.error {
+			animation: blink .5s step-end infinite alternate;
+		}
 	}
 	.integration {
 		width: 60px;
@@ -76,29 +82,48 @@
 		border: $border-width solid rgba($white, 0.2);
 		line-height: 60px;
 		top: -20px;
-		&:before,
-		&:after {
-			content: "";
-		    position: absolute;
-		    width: 50px;
-			height: 8px;
-			top: calc(50% - 4px);
-		    display: block;
-		    -webkit-mask: url("../images/arrow.svg");
-		    mask: url("../images/arrow.svg");
-		    transition-property: opacity,transform;
-		    transition-duration: .5s;
-		    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
-		    transition-delay: .3s;
-		    will-change: opacity,transform;
-			background: $border-color;
-			animation: move-arrows .5s linear infinite;
-	    }
-	    &:before {
-		    left: -54px;
+		&.left-check {
+			&:before {
+				content: "";
+			    position: absolute;
+			    width: 50px;
+				height: 8px;
+				top: calc(50% - 4px);
+			    display: block;
+			    -webkit-mask: url("../images/arrow.svg");
+			    mask: url("../images/arrow.svg");
+			    transition-property: opacity,transform;
+			    transition-duration: .5s;
+			    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+			    transition-delay: .3s;
+			    will-change: opacity,transform;
+				background: $border-color;
+				animation: move-arrows .5s linear infinite;
+			    left: -54px;
+			}
 		}
-		&:after {
-			right: -54px;
+		&.right-check {
+			&:after {
+				content: "";
+			    position: absolute;
+			    width: 50px;
+				height: 8px;
+				top: calc(50% - 4px);
+			    display: block;
+			    -webkit-mask: url("../images/arrow.svg");
+			    mask: url("../images/arrow.svg");
+			    transition-property: opacity,transform;
+			    transition-duration: .5s;
+			    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+			    transition-delay: .3s;
+			    will-change: opacity,transform;
+				background: $border-color;
+				animation: move-arrows .5s linear infinite;
+				right: -54px;
+			}
+		}
+		&.check {
+			border-color: $white;
 		}
 	}
 }
@@ -110,9 +135,9 @@
 		mask-position:11px 0
 	}
 }
-@keyframes move-arrows-delayed {
-	to {
-		-webkit-mask-position:330px 0;
-		mask-position:330px 0
-	}
+
+@keyframes blink { 
+    50% { 
+	   border-color: rgba($white, 0.6); 
+	} 
 }
