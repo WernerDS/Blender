@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The most popular Feed to Feed mixer in the world.">
+    <meta name="author" content="Dot Slash and Blender contributors">
+    @if (Context.Request.Path.ToString().Length <= 1)
+    {
+        <title>Blender - Making smoothies from your feeds</title>
+    }
+    else
+    {
+        <title>@ViewData["Title"] - Blender</title>
+    }
+
+	<!-- Blender core CSS -->
+    <link rel="stylesheet" href="~/css/blender.css" />
+    
+    <!-- Fontawesome JS -->
+    <script src="~/js/fontawesome.js"></script>
+    
+    <!-- Favicons -->
+	<link rel="apple-touch-icon" href="~/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="~/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="~/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="~/favicons/manifest.json">
+	<link rel="mask-icon" href="~/favicons/safari-pinned-tab.svg" color="#563d7c">
+	<link rel="icon" href="~/favicons/favicon.ico">
+	<meta name="msapplication-config" content="~/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#563d7c">
+    
+</head>
+<body>
+	
+	@await Html.PartialAsync("Pageload")
+	
+	@await Html.PartialAsync("Navigation")
+	
+	@RenderBody()
+	
+	@await Html.PartialAsync("Footer")
+    
+    <div class="query"></div>
+    
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+	<script src="~/js/popper.min.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+	@RenderSection("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+	body {padding-top: 0;}
+	.fixed-top {background-color: rgba(255,255,255,0.95) !important;}
+</style>
+
+<header class="dark parallax full-bg" data-background="/images/landing/home-parallax.jpg">
+	<div class="wrap container">
+		<div class="content center-center text-center">
+			<img src="~/images/landing/logo.png" class="img-fluid mx-auto">
+		</div>
+	</div>
+	<img src="~/images/landing/shape-up.png" class="shape-up img-fluid">
+</header>
+
+<section class="bg-white" style="height: 400px"></section>
+
+<section class="bg-primary inner-shapes" style="height: 1000px">
+	<img src="~/images/landing/shape-up.png" class="shape-up img-fluid">
+	<img src="~/images/landing/shape-down.png" class="shape-down img-fluid">
+</section>
+
+<section class="bg-white" style="height: 400px"></section>
+
+@section Scripts {
+	<script src="~/js/parallax.js"></script>
+	<script>
+		// Parallax BG Images
+		$(document).ready(function(){
+			// Parallax        
+		    if (($(window).width() >= 1024)) {
+		        $(".parallax").parallax("50%", -0.4);
+		    } 
+			// Parallax Section BG
+			var pageSection = $(".full-bg");
+		    pageSection.each(function(indx){
+		        
+		        if ($(this).attr("data-background")){
+		            $(this).css("background-image", "url(" + $(this).data("background") + ")");
+		        }
+		    });
+		});
+	</script>
+}

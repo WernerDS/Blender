@@ -1,0 +1,12 @@
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/app.db
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/blender.deps.json
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/blender.runtimeconfig.json
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/blender.runtimeconfig.dev.json
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/blender.dll
+/Users/cantusstar/Sites/blender/bin/Debug/netcoreapp2.0/blender.pdb
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.csproj.CoreCompileInputs.cache
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.AssemblyInfoInputs.cache
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.AssemblyInfo.cs
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.dll
+/Users/cantusstar/Sites/blender/obj/Debug/netcoreapp2.0/blender.pdb

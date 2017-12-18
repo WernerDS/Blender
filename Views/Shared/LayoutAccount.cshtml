@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Blender</title>
+
+    <link rel="stylesheet" href="~/css/blender.css" />
+    <script src="~/js/fontawesome.js"></script>
+    
+</head>
+<body class="accounts">
+	
+	@await Html.PartialAsync("Pageload")
+	
+	<div class="login-header pri-gradient-darker"></div>
+	
+	@RenderBody()
+    
+    <script src="~/js/jquery-3.2.1.min.js"></script>
+	<script src="~/js/popper.min.js"></script>
+	<script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+    
+</body>
+</html>

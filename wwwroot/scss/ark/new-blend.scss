@@ -1,0 +1,96 @@
+.blend-services {
+	position: relative;
+	.service,
+	.integration {
+		width: 170px;
+		height: 170px;
+		display: inline-block;
+		border: $border-width dashed $border-color;
+		border-radius: $border-radius-lg;
+		background: $white;
+		.service-logo {
+		    display: block;
+		    margin: 0 auto;
+		    max-width: 100%;
+		    height: 100px;
+		    line-height: 100px;
+		}
+		div {
+		    display: block;
+		    margin-bottom: 1rem;
+		    color: $gray-500;
+		}
+		&.selected {
+			border-style: solid;
+			border-color: $body-color;
+			div {
+				color: $body-color;
+			}
+		}
+	}
+	.integration {
+		width: 90px;
+		height: 90px;
+		.service-logo {
+			height: 90px;
+		    line-height: 90px;
+		}
+	}
+
+	.connection {
+		position: relative;
+		width: 100px;
+		display: inline-block;
+		top: -40px;
+		&:before {
+			content: "";
+		    position: absolute;
+		    width: 100%;
+		    height: 8px;
+		    display: block;
+		    top: 0;
+		    left: 0;
+		    -webkit-mask: url("../images/arrow.svg");
+		    mask: url("../images/arrow.svg");
+		    transition-property: opacity,transform;
+		    transition-duration: .5s;
+		    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+		    transition-delay: .3s;
+		    will-change: opacity,transform;
+			background: $border-color;
+			animation: move-arrows .5s linear infinite;
+	    }
+	}
+}
+
+#stepFinal {
+	.blend-services {
+		.service,
+		.integration {
+			border-color: $success;
+			background: $success;
+			.service-logo,
+			div {
+				color: $white;
+			}
+		}
+		.connection {
+			&:before {
+				background: $success;
+		    }
+		}
+	}
+}
+
+@keyframes move-arrows {
+	to {
+		-webkit-mask-position:11px 0;
+		mask-position:11px 0
+	}
+}
+@keyframes move-arrows-delayed {
+	to {
+		-webkit-mask-position:330px 0;
+		mask-position:330px 0
+	}
+}

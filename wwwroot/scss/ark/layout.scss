@@ -1,0 +1,20 @@
+// Body
+body {
+	padding-top: 84px;
+}
+
+// Containers
+.container {
+	position: relative;
+}
+
+// Navigation
+.avatar {
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    max-width: 30px;
+    max-height: 30px;
+    border-radius: 1.5em;
+}

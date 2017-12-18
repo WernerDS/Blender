@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 15.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blender", "blender.csproj", "{C10092AC-6280-4FBA-8B5C-116E97F91DC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C10092AC-6280-4FBA-8B5C-116E97F91DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10092AC-6280-4FBA-8B5C-116E97F91DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10092AC-6280-4FBA-8B5C-116E97F91DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10092AC-6280-4FBA-8B5C-116E97F91DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

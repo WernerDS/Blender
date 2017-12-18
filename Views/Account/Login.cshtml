@@ -1,0 +1,53 @@
+﻿@using System.Collections.Generic
+@using System.Linq
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Http.Authentication
+@model LoginViewModel
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = "Sign In";
+    Layout = "~/Views/Shared/LayoutAccount.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4 mx-auto">
+	    <div class="text-center mb-4">
+		    <h3><a href="/" class="mb-4"><i class="icon-blender fa-lg"></i> Blender</a></h3>
+	    	<h1 class="text-white">@ViewData["Title"]</h1>
+	    </div>
+        <div class="card mb-4">
+	        <div class="card-body">
+	            <form asp-route-returnurl="@ViewData["ReturnUrl"]" method="post">
+	                <div asp-validation-summary="All" class="text-danger"></div>
+	                <div class="form-group">
+	                    <input asp-for="Email" class="form-control form-control-lg" placeholder="Email..." />
+	                    <span asp-validation-for="Email" class="text-danger"></span>
+	                </div>
+	                <div class="form-group">
+	                    <input asp-for="Password" class="form-control form-control-lg" placeholder="Password..." />
+	                    <span asp-validation-for="Password" class="text-danger"></span>
+	                </div>
+	                <div class="form-group">
+	                    <label class="custom-control custom-checkbox">
+						  <input type="checkbox" class="custom-control-input" asp-for="RememberMe">
+						  <span class="custom-control-indicator"></span>
+						  <span class="custom-control-description">@Html.DisplayNameFor(m => m.RememberMe)</span>
+						</label>
+						<a class="float-right" asp-action="ForgotPassword">Forgot your password?</a>
+	                </div>
+	                <div class="form-group text-center">
+	                    <button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+	                </div>
+	                <div class="text-center">
+		                <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Register as a new user?</a>
+	                </div>
+	            </form>
+	        </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
