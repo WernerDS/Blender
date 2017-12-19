@@ -61,6 +61,7 @@
 }
 
 .alert--notify {
+	left: 0;
   &:not(.alert-info):not(.alert-success):not(.alert-warning):not(.alert-danger) {
     background-color: $primary;
   }

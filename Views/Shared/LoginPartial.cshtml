@@ -7,7 +7,7 @@
 @if (SignInManager.IsSignedIn(User))
 {
 	<ul class="navbar-nav mr-auto">
-<!-- 		<li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="/discover">Discover</a></li>
 		<li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
 		<li class="nav-item"><a class="nav-link" href="/my-services">My Services</a></li>
 		<li class="nav-item"><a class="nav-link" href="/my-blends">My Blends</a></li>
@@ -20,9 +20,13 @@
 		          <img class="avatar" src="~/images/avatar.jpg"> @UserManager.GetUserName(User) <i class="fa fa-chevron-down"></i>
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item" href="/my-services">My Services</a>
-		          <a class="dropdown-item" href="/my-blends">My Blends</a>
-		          <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit();">Sign Out</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-user-circle fa-fw"></i> My Profile</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-credit-card fa-fw"></i> Billing</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-clipboard fa-fw"></i> Subscription</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-list fa-fw"></i> Audit Log</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-cog fa-fw"></i> Settings</a>
+			        <a class="dropdown-item" href="javascript:void(0)"><i class="fas fa-certificate fa-fw"></i> Whats New</a>
+		            <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit();"><i class="fas fa-power-off fa-fw"></i> Sign Out</a>
 		        </div>
 		    </li>
 	    </ul>

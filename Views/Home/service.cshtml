@@ -1,5 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Service Name Here";
+    
+    ViewData["ServiceTitle1"] = "My Service Name";
+	ViewData["ServiceIcon1"] = "fa-freebsd";
+	ViewData["ServiceCreate1"] = "Dec 15, 2017 9:17 am";
 }
 
 <section class="section pri-gradient-darker">
@@ -9,9 +13,9 @@
 		
 		<div class="row">
 			<div class="col">
-				<i class="fab fa-freebsd fa-5x"></i>
-				<h1 class="display-4 mt-4">@ViewData["Title"]</h1>
-				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created Dec 15, 2017 08:48 am</div></div>
+				<i class="fab @ViewData["ServiceIcon1"] fa-5x"></i>
+				<h1 class="display-4 mt-4">@ViewData["ServiceTitle1"]</h1>
+				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate1"]</div></div>
 				
 				<label class="switch" id="switch-funtion">
 					<input type="checkbox" checked>
@@ -51,47 +55,103 @@
 		</div>
 	</div>
 	
-	<div class="section">
+	<div class="section pt-0">
 		<div class="row mb-4">
-			<div class="col-md-6 mx-auto">
-				<h1 class="text-center mb-4">Service Activity</h1>
-				<ul class="activity">
-					<li>
-						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
-						<h3>Service connected</h3>
-						<p>Dec 15, 2017 14:21 am</p>
-					</li>
-					<li>
-						<div><i class="fas fa-comment-alt fa-lg"></i></div>
-						<h3>Feed requested</h3>
-						<p>Dec 15, 2017 10:32 am</p>
-					</li>
-					<li>
-						<div class="bg-danger"><i class="fas fa-plug fa-lg text-white"></i></div>
-						<h3>Service disconnected</h3>
-						<p>Dec 15, 2017 08:48 am</p>
-					</li>
-					<li>
-						<div><i class="fas fa-pencil-alt fa-lg"></i></div>
-						<h3>Service edited</h3>
-						<p>Dec 13, 2017 14:28 am</p>
-					</li>
-					<li>
-						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
-						<h3>Service connected</h3>
-						<p>Dec 10, 2017 08:48 am</p>
-					</li>
-					<li>
-						<div><i class="fas fa-comment-alt fa-lg"></i></div>
-						<h3>Feed requested</h3>
-						<p>Dec 11, 2017 10:32 am</p>
-					</li>
-					<li>
-						<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
-						<h3>Service created</h3>
-						<p>Dec 9, 2017 10:28 am</p>
-					</li>
-				</ul>
+			<div class="col mx-auto">
+				
+				<div class="tab-container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Activity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Details</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active fade show" id="home" role="tabpanel">
+	                        
+							<ul class="activity">
+								<li>
+									<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+									<h3>Service connected</h3>
+									<p>Dec 15, 2017 14:21 am</p>
+								</li>
+								<li>
+									<div><i class="fas fa-comment-alt fa-lg"></i></div>
+									<h3>Feed requested</h3>
+									<p>Dec 15, 2017 10:32 am</p>
+								</li>
+								<li>
+									<div class="bg-danger"><i class="fas fa-plug fa-lg text-white"></i></div>
+									<h3>Service disconnected</h3>
+									<p>Dec 15, 2017 08:48 am</p>
+								</li>
+								<li>
+									<div><i class="fas fa-pencil-alt fa-lg"></i></div>
+									<h3>Service edited</h3>
+									<p>Dec 13, 2017 14:28 am</p>
+								</li>
+								<li>
+									<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+									<h3>Service connected</h3>
+									<p>Dec 10, 2017 08:48 am</p>
+								</li>
+								<li>
+									<div><i class="fas fa-comment-alt fa-lg"></i></div>
+									<h3>Feed requested</h3>
+									<p>Dec 11, 2017 10:32 am</p>
+								</li>
+								<li>
+									<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+									<h3>Service created</h3>
+									<p>Dec 9, 2017 10:28 am</p>
+								</li>
+							</ul>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel">
+	                        <table class="table mc-table"> 
+								<tbody> 
+									<tr>
+								        <th>Service name</th> 
+								        <td>@ViewData["Title"]</td> 
+								    </tr> 
+									<tr> 
+										<th>Service URL</th>
+										<td>
+											<span data-mc-el="archiveUrlPane">
+												<a href="">https://{{serverURL}}/UsedVehicleStock?DealershipID_FK={{use DealershipID_PK from Dealerships call}}</a> 
+												<button class="btn btn-light btn-sm">Edit</button> 
+											</span> 
+										</td>  
+									</tr> 
+							        <tr> 
+								        <th>Create date</th> 
+								        <td>Dec 15, 2017 08:48 am</td>  
+								    </tr>
+							        
+								    <tr> 
+									    <th>Last run</th> 
+									    <td>Dec 18, 2017 08:48 am</td> 
+									</tr>
+							        <tr> 
+								        <th>Service Owner</th> 
+								        <td>Britehouse</td> 
+								    </tr>
+							        <tr> 
+								        <th>Service Stock</th> 
+								        <td>Used Vehicle Stock</td> 
+								    </tr> 
+								    <tr> 
+									    <th>Solution</th>
+										<td>REST API: ASP.net (C#)</td>   
+									</tr> 
+								</tbody> 
+							</table>
+                        </div>
+                    </div>
+				</div>
 			</div>
 		</div>
 	</div>

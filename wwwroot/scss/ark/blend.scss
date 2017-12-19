@@ -11,18 +11,58 @@
 	}
 }
 
+.inline-connection {
+	div {
+		display: block;
+		float: left;
+		width: 32px;
+		text-align: center;
+		line-height: 34px;
+	}
+	.connect {
+		margin: 0 20px;
+		position: relative;
+		&:before,
+		&:after {
+			content: "";
+		    position: absolute;
+		    width: 20px;
+			height: 8px;
+			top: calc(50% - 4px);
+		    display: block;
+		    -webkit-mask: url("../images/arrow.svg");
+		    mask: url("../images/arrow.svg");
+		    transition-property: opacity,transform;
+		    transition-duration: .5s;
+		    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+		    transition-delay: .3s;
+		    will-change: opacity,transform;
+			background: $border-color;
+			animation: move-arrows .5s linear infinite;
+		}
+		&:before {
+		    left: -20px;
+		}
+		&:after {
+			right: -20px;
+		}
+	}
+}
+
 .tab-container {
-	margin-top: -41px;
-	.nav-tabs {
-		border: none;
-		.nav-link {
+	&.blend {
+		margin-top: -41px;
+		.nav-tabs {
 			border: none;
-			color: $white;
-			&:before {
-				background-color: transparent;
-			}
-			&.active {
-				color: $body-color;
+			.nav-link {
+				border: none;
+				color: $white;
+				&:before {
+					background-color: transparent;
+				}
+				&.active {
+					color: $body-color;
+				}
 			}
 		}
 	}

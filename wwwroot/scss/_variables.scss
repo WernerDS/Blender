@@ -203,6 +203,7 @@ $line-height-sm:              1.5 !default;
 $border-width:                2px !default;
 $border-color:                $gray-200 !default;
 
+
 $border-radius:               .25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
@@ -246,7 +247,7 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        "NunitoBold", $font-family-sans-serif !default;
+$headings-font-family:        "AvenirNext-Bold", $font-family-sans-serif !default;
 $headings-font-weight:        700 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
@@ -319,7 +320,7 @@ $table-dark-color:            $body-bg !default;
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
 $input-btn-padding-y:         .375rem !default;
-$input-btn-padding-x:         .75rem !default;
+$input-btn-padding-x:         1.75rem !default;
 $input-btn-line-height:       $line-height-base !default;
 
 $input-btn-focus-width:       .2rem !default;

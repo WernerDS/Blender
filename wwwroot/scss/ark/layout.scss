@@ -12,6 +12,12 @@ body {
 .fixed-top {
 	border-bottom: 1px solid $border-color;
 }
+.navbar-nav {
+	.nav-link {
+		font-family: $headings-font-family;
+		font-size: 1.5rem;
+	}
+}
 .avatar {
     -webkit-flex-shrink: 0;
     -moz-flex-shrink: 0;

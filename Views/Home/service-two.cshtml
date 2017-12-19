@@ -1,5 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Bidvest McCarthy Toyota";
+    
+    ViewData["ServiceTitle3"] = "Bidvest McCarthy Toyota";
+	ViewData["ServiceIcon3"] = "fa-grunt";
+	ViewData["ServiceCreate3"] = "Feb 10, 2017 9:48 am";
 }
 
 <section class="section pri-gradient-darker">
@@ -9,9 +13,9 @@
 		
 		<div class="row">
 			<div class="col">
-				<i class="fab fa-grunt fa-5x"></i>
-				<h1 class="display-4 mt-4">@ViewData["Title"]</h1>
-				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created Feb 10, 2017 9:48 am</div></div>
+				<i class="fab @ViewData["ServiceIcon3"] fa-5x"></i>
+				<h1 class="display-4 mt-4">@ViewData["ServiceTitle3"]</h1>
+				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate3"]</div></div>
 				
 				<label class="switch" id="switch-funtion">
 					<input type="checkbox">
@@ -51,38 +55,58 @@
 		</div>
 	</div>
 	
-	<div class="section">
+	<div class="section pt-0">
 		<div class="row mb-4">
-			<div class="col-md-6 mx-auto">
-				<h1 class="text-center mb-4">Service Activity</h1>
-				<ul class="activity">
-			
-					<li>
-						<div class="bg-danger"><i class="fas fa-plug fa-lg text-white"></i></div>
-						<h3>Service disconnected</h3>
-						<p>Dec 15, 2017 08:48 am</p>
-					</li>
-					<li>
-						<div><i class="fas fa-pencil-alt fa-lg"></i></div>
-						<h3>Service edited</h3>
-						<p>Dec 13, 2017 14:28 am</p>
-					</li>
-					<li>
-						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
-						<h3>Service connected</h3>
-						<p>Dec 10, 2017 08:48 am</p>
-					</li>
-					<li>
-						<div><i class="fas fa-comment-alt fa-lg"></i></div>
-						<h3>Feed requested</h3>
-						<p>Dec 11, 2017 10:32 am</p>
-					</li>
-					<li>
-						<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
-						<h3>Service created</h3>
-						<p>Dec 9, 2017 10:28 am</p>
-					</li>
-				</ul>
+			<div class="col mx-auto">
+				
+				<div class="tab-container">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Activity</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Details</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active fade show" id="home" role="tabpanel">
+				
+							<ul class="activity">
+						
+								<li>
+									<div class="bg-danger"><i class="fas fa-plug fa-lg text-white"></i></div>
+									<h3>Service disconnected</h3>
+									<p>Dec 15, 2017 08:48 am</p>
+									<span class="badge badge-danger">You do not have access rights to the content. Try the setup again and check your details.</span>
+								</li>
+								<li>
+									<div><i class="fas fa-pencil-alt fa-lg"></i></div>
+									<h3>Service edited</h3>
+									<p>Dec 13, 2017 14:28 am</p>
+								</li>
+								<li>
+									<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+									<h3>Service connected</h3>
+									<p>Dec 10, 2017 08:48 am</p>
+								</li>
+								<li>
+									<div><i class="fas fa-comment-alt fa-lg"></i></div>
+									<h3>Feed requested</h3>
+									<p>Dec 11, 2017 10:32 am</p>
+								</li>
+								<li>
+									<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+									<h3>Service created</h3>
+									<p>Dec 9, 2017 10:28 am</p>
+								</li>
+							</ul>
+						</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel">
+	                        
+                        </div>
+                    </div>
+				</div>
 			</div>
 		</div>
 	</div>
