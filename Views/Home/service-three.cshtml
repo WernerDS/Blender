@@ -121,28 +121,4 @@
 </div>
 
 @section Scripts {
-	<script src="~/js/sweetalert2.min.js"></script>
-	<script>
-		 // Warning Message with function
-        $('#switch-funtion').click(function(){
-            swal({
-                title: 'Are you sure?',
-                text: 'You will not be able to recover this imaginary service!',
-                type: 'warning',
-                showCancelButton: true,
-                buttonsStyling: false,
-                confirmButtonClass: 'btn btn-danger',
-                confirmButtonText: 'Yes, delete it!',
-                cancelButtonClass: 'btn btn-secondary'
-            }).then(function(){
-                swal({
-                    title: 'Fine!',
-                    text: 'You will not be able to recover this imaginary service!',
-                    type: 'success',
-                    buttonsStyling: false,
-                    confirmButtonClass: 'btn btn-secondary'
-                });
-            });
-        });
-	</script>
 }

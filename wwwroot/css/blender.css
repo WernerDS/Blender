@@ -8607,6 +8607,12 @@ body.accounts {
   font-family: "AvenirNext-Bold", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.5rem; }
 
+.bg-facebook {
+  background-color: #3B579D; }
+
+.bg-google {
+  background-color: #DB3236; }
+
 .tri-gradient {
   background: linear-gradient(150deg, #007bff 15%, #1A9BFC 70%, #20c997 94%); }
 
@@ -8662,6 +8668,12 @@ body.accounts {
     top: 0;
     transform: skewY(-12deg);
     background: #f6f9fc; }
+
+.dropdown-item {
+  font-family: "AvenirNext-Bold", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  .dropdown-item .svg-inline--fa {
+    color: rgba(73, 80, 87, 0.7);
+    margin-right: 1rem; }
 
 .mixer {
   position: relative;

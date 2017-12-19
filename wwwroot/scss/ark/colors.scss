@@ -5,6 +5,16 @@ $gradient-degree:     150deg;
 $primary-color:       theme-color("primary");
 $secondary-color:     $info;
 
+$bg-facebook: 		  #3B579D;
+$bg-google: 		  #DB3236;
+
+.bg-facebook {
+	background-color: $bg-facebook;
+}
+.bg-google {
+	background-color: $bg-google;
+}
+
 //
 // GRADIENT
 // --------------------------------------------------
