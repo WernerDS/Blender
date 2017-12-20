@@ -7,6 +7,11 @@
     width: 100%;
     margin: 0 0 40px 0;
     padding: 0;
+    h4 {
+	    display: block;
+	    width: 100%;
+	    margin-top: $spacer * 2;
+    }
     li {
 	    display: flex;
 	    justify-content: center;
@@ -21,7 +26,7 @@
 		    display: table;
 		    //padding-top: 100%;
 		}
-		a {
+		a, div {
 		    display: block;
 		    padding: .375em;
 		    margin: .5rem;
@@ -66,8 +71,7 @@
 				//background: $gray-100;
 				border-color: $primary;
 			}
-			&.disabled,
-			&.selected {
+			&.disabled {
 				background: $gray-200;
 				color: $gray-500;
 				cursor: default;
@@ -86,11 +90,16 @@
 					border-color: $border-color;
 				}
 			}
+			&.new {
+				border-style: dashed;
+			}
 			&.selected {
-				.state {
-					.fa-circle {
-						color: $success;
-					}
+				background: $primary;
+				border-color: $primary;
+				color: $white;
+				cursor: default;
+				.feed-name {
+					color: $white;
 				}
 			}
 		}

@@ -195,3 +195,11 @@ $sync-width-sm: 20px;
 		}
 	}
 }
+
+
+@keyframes move-arrows {
+	to {
+		-webkit-mask-position:11px 0;
+		mask-position:11px 0
+	}
+}

@@ -1,3 +1,55 @@
+.wizard-card {
+	height: calc(100vh - 85px); 
+	position: relative;
+	.wizard-header{
+        text-align: center;
+    }
+	.wizard-navigation {
+		position: relative;
+		.nav-pills {
+		    background-color: rgba(200, 200, 200, 0.2);
+		    li {
+			    text-align: center;
+			    a {
+				    color: $body-color;
+				    font-size: $font-size-sm;
+			    }
+		    }
+		}
+	}
+	.moving-tab{
+        position: absolute;
+        text-align: center;
+        -webkit-font-smoothing: subpixel-antialiased;
+        top:-4px;
+        left: 0px;
+        border-radius: 4rem;
+        color: $white;
+        cursor: pointer;
+        padding: 4px 0;
+        background: $primary;
+        box-shadow: 0 16px 26px -10px rgba($primary, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba($primary, 0.2);
+        font-family: $headings-font-family;
+    }
+    .btn-finish,
+    .btn.disabled {
+        display: none;
+    }
+    .btn-finish {
+	    // overwrite the 'display:inline'
+	    position: relative;
+	    top: 8px;
+    }
+    .tab-content{
+        min-height: 400px;
+        padding: 40px 0;
+        .tab-pane {
+	        padding: 10px 0;
+        }
+    }
+}
+
+
 .my-blend {
 	.blend-services {
 		.service,

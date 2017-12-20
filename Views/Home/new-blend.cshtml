@@ -2,266 +2,248 @@
     ViewData["Title"] = "New Blend";
 }
 
+<section class="wizard-card" id="wizard">
 
-<section id="stepOne" class="section">
-	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">1. Setup blend</div>
-		<div class="mixer">
-			<a href="" class="ingedient to-choose">
-				<i class="fas fa-plus fa-3x"></i>
-				<h6>Select Ingredient</h6>
-			</a>
-			<a href="" class="blade to-choose">
-				<i class="fas fa-plus fa-2x"></i>
-			</a>
-			<a href="" class="ingedient to-choose">
-				<i class="fas fa-plus fa-3x"></i>
-				<h6>Select Ingredient</h6>
-			</a>
+	<form action="" method="">
+		
+		<div class="wizard-header">
+	    	<h3 class="wizard-title py-4 mb-0">Make a smoothie</h3>
 		</div>
-	</div>
-</section>
-
-<div id="stepTwo" class="section">
-	<div class="container text-center">
-		
-		<div class="badge badge-pill badge-secondary mx-auto mb-4">2. 1st service</div>
-		
-		<ul class="list">
-			<li>
-				<a href="javascript:void(0)">
-					<i class="fab fa-freebsd fa-3x service-logo"></i>
-					<h6 class="feed-name">My Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="fab fa-grav fa-3x service-logo"></i>
-					<h6 class="feed-name">Other Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="fab fa-codepen fa-3x service-logo"></i>
-					<h6 class="feed-name">Third Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)" class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
-					<i class="fab fa-grunt fa-3x service-logo"></i>
-					<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
-				</a>
-			</li>
-			<li>
-				<a href="/search">
-					<i class="fas fa-plus fa-3x service-logo"></i>
-					<h6 class="feed-name">New Service</h6>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<section id="stepThree" class="section">
-	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">3. Quick review</div>
-		<div class="mixer">
-			<div class="ingedient selected">
-				<i class="fab fa-freebsd fa-3x"></i>
-				<h6>Service Name</h6>
-			</div>
-			<a href="" class="blade to-choose">
-				<i class="fas fa-plus fa-2x"></i>
-			</a>
-			<a href="" class="ingedient to-choose">
-				<i class="fas fa-plus fa-3x"></i>
-				<h6>Select Ingredient</h6>
-			</a>
-		</div>
-	</div>
-</section>
-
-<div id="stepFour" class="section">
-	<div class="container text-center">
-		
-		<div class="badge badge-pill badge-secondary mx-auto mb-4">4. 2nd service</div>
-		
-		<ul class="list">
-			<li>
-				<a href="javascript:void(0)" class="selected" data-toggle="tooltip" data-placement="top" title="Already selected">
-					<i class="fab fa-freebsd fa-3x service-logo"></i>
-					<h6 class="feed-name">My Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="fab fa-grav fa-3x service-logo"></i>
-					<h6 class="feed-name">Other Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="fab fa-codepen fa-3x service-logo"></i>
-					<h6 class="feed-name">Third Service Name</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)" class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
-					<i class="fab fa-grunt fa-3x service-logo"></i>
-					<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
-				</a>
-			</li>
-			<li>
-				<a href="/search">
-					<i class="fas fa-plus fa-3x service-logo"></i>
-					<h6 class="feed-name">New Service</h6>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<section id="stepFive" class="section">
-	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">5. Integration</div>
-		<div class="mixer">
-			<div class="ingedient selected">
-				<i class="fab fa-freebsd fa-3x"></i>
-				<h6>Service Name</h6>
-			</div>
-			<a href="" class="blade to-choose">
-				<i class="fas fa-plus fa-2x"></i>
-			</a>
-			<div class="ingedient selected">
-				<i class="fab fa-grav fa-3x"></i>
-				<h6>Another Service</h6>
-			</div>
-		</div>
-	</div>
-</section>
-
-<div id="stepSix" class="section">
-	<div class="container text-center">
-		
-		<div class="badge badge-pill badge-secondary mx-auto mb-4">6. Choose integration</div>
-		
-		<ul class="list integration">
-			<li>
-				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Use latest changes">
-					<i class="fas fa-clock fa-3x service-logo"></i>
-					<h6 class="feed-name">Use Latest</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Overwrite with latest">
-					<i class="fas fa-copy fa-3x service-logo"></i>
-					<h6 class="feed-name">Always Import</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Keep changes">
-					<i class="fas fa-tasks fa-3x service-logo"></i>
-					<h6 class="feed-name">Keep changes</h6>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
-
-<section id="stepSeven" class="section">
-	<div class="container text-center">
-		<div class="badge badge-pill badge-secondary mb-4">7. Review and Finish</div>
-		
-		<div class="mixer mb-4">
-			<div class="ingedient selected">
-				<i class="fab fa-freebsd fa-3x"></i>
-				<h6>Service Name</h6>
-			</div>
-			<div class="blade blade-left blade-right selected">
-				<i class="fas fa-clock fa-2x"></i>
-			</div>
-			<div class="ingedient selected">
-				<i class="fab fa-grav fa-3x"></i>
-				<h6>Another Service</h6>
-			</div>
+			                    	
+		<div class="wizard-navigation">
+			<ul class="nav nav-pills" role="tablist">
+                <!--<li><a href="#stepOne" data-toggle="tab" role="tab" id="stepOne-tab">Setup blend</a></li>-->
+                <li><a href="#stepTwo" data-toggle="tab" role="tab" id="stepTwo-tab">1st ingredient</a></li>
+                <!--<li><a href="#stepThree" data-toggle="tab" role="tab" id="stepThree-tab">Quick review</a></li>-->
+                <li><a href="#stepFour" data-toggle="tab" role="tab" id="stepFour-tab">2nd ingredient</a></li>
+                <!--<li><a href="#stepFive" data-toggle="tab" role="tab" id="stepFive-tab">Blend it</a></li>-->
+                <li><a href="#stepSix" data-toggle="tab" role="tab" id="stepSix-tab">Which blade</a></li>
+                <li><a href="#stepSeven" data-toggle="tab" role="tab" id="stepSeven-tab">Review</a></li>
+            </ul>
 		</div>
 		
-		<h3>Name your creation</h3>
-		<input type="text" class="form-control form-control-lg" id="" placeholder="ex. Cocktail Mix...">
+		<div class="container">
 		
-		<div class="text-center mt-4">
-        	<a href="/blend" class="btn btn-primary">Finish</a>
+			<div class="tab-content">
+			
+				<!--<section id="stepOne" class="tab-pane fade show active" role="tabpanel">
+					<div class="container text-center">
+						<div class="badge badge-pill badge-secondary mb-4">1. Setup blend</div>
+						<div class="mixer">
+							<a href="javascript:void(0)" class="ingedient to-choose">
+								<i class="fas fa-plus fa-3x"></i>
+								<h6>Select Ingredient</h6>
+							</a>
+							<a href="javascript:void(0)" class="blade to-choose">
+								<i class="fas fa-plus fa-2x"></i>
+							</a>
+							<a href="javascript:void(0)" class="ingedient to-choose">
+								<i class="fas fa-plus fa-3x"></i>
+								<h6>Select Ingredient</h6>
+							</a>
+						</div>
+					</div>
+				</section>-->
+				
+				<section id="stepTwo" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">2. 1st service</div>
+						
+						<ul class="list">
+							<li>
+								<a href="javascript:void(0)">
+									<i class="fab fa-freebsd fa-3x service-logo"></i>
+									<h6 class="feed-name">My Service Name</h6>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="fab fa-grav fa-3x service-logo"></i>
+									<h6 class="feed-name">Other Service Name</h6>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="fab fa-codepen fa-3x service-logo"></i>
+									<h6 class="feed-name">Third Service Name</h6>
+								</a>
+							</li>
+							<li>
+								<div class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
+									<i class="fab fa-grunt fa-3x service-logo"></i>
+									<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
+								</div>
+							</li>
+							<li>
+								<a href="/search" class="new">
+									<i class="fas fa-plus fa-3x service-logo"></i>
+									<h6 class="feed-name">New Service</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				
+				<!--<section id="stepThree" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						<div class="badge badge-pill badge-secondary mb-4">3. Quick review</div>
+						<div class="mixer">
+							<div class="ingedient selected">
+								<i class="fab fa-freebsd fa-3x"></i>
+								<h6>Service Name</h6>
+							</div>
+							<a href="javascript:void(0)" class="blade to-choose">
+								<i class="fas fa-plus fa-2x"></i>
+							</a>
+							<a href="javascript:void(0)" class="ingedient to-choose">
+								<i class="fas fa-plus fa-3x"></i>
+								<h6>Select Ingredient</h6>
+							</a>
+						</div>
+					</div>
+				</section>-->
+				
+				<section id="stepFour" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">4. 2nd service</div>
+						
+						<ul class="list">
+							<li>
+								<div class="selected" data-toggle="tooltip" data-placement="top" title="Selected ingredient">
+									<i class="fab fa-freebsd fa-3x service-logo"></i>
+									<h6 class="feed-name">My Service Name</h6>
+								</div>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="fab fa-grav fa-3x service-logo"></i>
+									<h6 class="feed-name">Other Service Name</h6>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)">
+									<i class="fab fa-codepen fa-3x service-logo"></i>
+									<h6 class="feed-name">Third Service Name</h6>
+								</a>
+							</li>
+							<li>
+								<div class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
+									<i class="fab fa-grunt fa-3x service-logo"></i>
+									<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
+								</div>
+							</li>
+							<li>
+								<a href="/search">
+									<i class="fas fa-plus fa-3x service-logo"></i>
+									<h6 class="feed-name">New Service</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				
+				<!--<section id="stepFive" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						<div class="badge badge-pill badge-secondary mb-4">5. Integration</div>
+						<div class="mixer">
+							<div class="ingedient selected">
+								<i class="fab fa-freebsd fa-3x"></i>
+								<h6>Service Name</h6>
+							</div>
+							<a href="javascript:void(0)" class="blade to-choose">
+								<i class="fas fa-plus fa-2x"></i>
+							</a>
+							<div class="ingedient selected">
+								<i class="fab fa-grav fa-3x"></i>
+								<h6>Another Service</h6>
+							</div>
+						</div>
+					</div>
+				</section>-->
+				
+				<section id="stepSix" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">6. Choose integration</div>
+						
+						<ul class="list">
+							<li>
+								<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+									<i class="fas fa-clock fa-3x service-logo"></i>
+									<h6 class="feed-name">Use Latest</h6>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Overwrite with latest">
+									<i class="fas fa-copy fa-3x service-logo"></i>
+									<h6 class="feed-name">Always Import</h6>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" data-toggle="tooltip" data-placement="top" title="Keep changes">
+									<i class="fas fa-tasks fa-3x service-logo"></i>
+									<h6 class="feed-name">Keep changes</h6>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				
+				<section id="stepSeven" class="tab-pane fade" role="tabpanel">
+					<div class="container text-center">
+						<div class="badge badge-pill badge-secondary mb-4">7. Review and Finish</div>
+						
+						<div class="mixer mb-4">
+							<div class="ingedient selected">
+								<i class="fab fa-freebsd fa-3x"></i>
+								<h6>Service Name</h6>
+							</div>
+							<div class="blade blade-left blade-right selected">
+								<i class="fas fa-clock fa-2x"></i>
+							</div>
+							<div class="ingedient selected">
+								<i class="fab fa-grav fa-3x"></i>
+								<h6>Another Service</h6>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-6 mx-auto text-center">
+								<h3>Name your creation</h3>
+								<input type="text" class="form-control form-control-lg" id="" placeholder="ex. Cocktail Mix...">
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			</div>
+			
+			<div class="wizard-footer">
+				<div class="row">
+			        <div class="col">
+			            <input type='button' class='btn btn-previous btn-fill btn-secondary btn-wd' name='previous' value='Previous' />
+			        </div>
+			        <div class="col text-right">
+			            <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+			            <a href="/blend" class='btn btn-finish btn-fill btn-primary btn-wd' name='finish'>Blend it!</a>
+			        </div>
+				</div>
+			</div>
+		
 		</div>
-	</div>
+	
+	</form>
+
 </section>
 
 
 @section Scripts {
-	<script src="~/js/bootstrap-notify.min.js"></script>
+	<script src="~/js/jquery.bootstrap.wizard.js"></script>
+	<script src="~/js/jquery.settings.wizard.js"></script>
+	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 	<script>
-        function notify(from, align, icon, type, animIn, animOut){
-            $.notify({
-                icon: icon,
-                title: 'You mixed up a new blend!',
-                message: '',
-                url: ''
-            },{
-                element: 'body',
-                type: type,
-                allow_dismiss: true,
-                placement: {
-                    from: from,
-                    align: align
-                },
-                offset: {
-                    x: 20,
-                    y: 0
-                },
-                spacing: 10,
-                z_index: 1031,
-                delay: 2500,
-                timer: 1000,
-                url_target: '_blank',
-                mouse_over: false,
-                animate: {
-                    enter: animIn,
-                    exit: animOut
-                },
-                template:   '<div data-notify="container" class="alert alert-dismissible alert-{0} alert--notify" role="alert">' +
-                                //'<span data-notify="icon"></span> ' +
-                                //'<span data-notify="title">{1}</span> ' +
-                                //'<span data-notify="message">{2}</span>' +
-                                //'<div class="progress" data-notify="progressbar">' +
-                                //    '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
-                                //'</div>' +
-                                //'<a href="{3}" target="{4}" data-notify="url"></a>' +
-                                //'<button type="button" aria-hidden="true" data-notify="dismiss" class="close"><span>×</span></button>' +
-                                '<span class="display-4" data-notify="title">{1}</span>' +
-                            '</div>'
-            });
-        }
-
-        $('#finialise').click(function(e){
-            e.preventDefault();
-            var nFrom = $(this).attr('data-from');
-            var nAlign = $(this).attr('data-align');
-            var nIcons = $(this).attr('data-icon');
-            var nType = $(this).attr('data-type');
-            var nAnimIn = $(this).attr('data-animation-in');
-            var nAnimOut = $(this).attr('data-animation-out');
-
-            notify(nFrom, nAlign, nIcons, nType, nAnimIn, nAnimOut);
-        });
+        
     </script>
-	<script>
-		$('#searchService a').click( function() {
-		    $('#connectHere').removeClass('d-none')
-		    $('#searchService').addClass('d-none')
-		});
-		
-		$('#backToSearch').click( function() {
-		    $('#connectHere').addClass('d-none')
-		    $('#searchService').removeClass('d-none')
-		});
-	</script>
 }

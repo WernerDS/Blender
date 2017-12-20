@@ -16,7 +16,6 @@
 @import "bootstrap/bootstrap";
 
 // Ark
-@import "ark/account-pages";
 @import "ark/alerts";
 @import "ark/animate";
 @import "ark/badge"; 
@@ -26,8 +25,6 @@
 @import "ark/dropdown";
 @import "ark/ingredients";
 @import "ark/layout";
-@import "ark/marketing-pages";
-@import "ark/new-blend";
 @import "ark/pageload";
 @import "ark/search";
 @import "ark/sections";
@@ -38,3 +35,6 @@
 @import "ark/tabs";
 @import "ark/toggle";  
 
+// Pages
+@import "ark/account-pages";
+@import "ark/marketing-pages";
