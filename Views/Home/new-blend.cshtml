@@ -2,8 +2,8 @@
     ViewData["Title"] = "New Blend";
 }
 
-<section class="wizard-card" id="wizard">
-
+<div class="container">
+	<section class="wizard-card" id="wizard">
 	<form action="" method="">
 		
 		<div class="wizard-header">
@@ -18,11 +18,11 @@
                 <li><a href="#stepFour" data-toggle="tab" role="tab" id="stepFour-tab">2nd ingredient</a></li>
                 <!--<li><a href="#stepFive" data-toggle="tab" role="tab" id="stepFive-tab">Blend it</a></li>-->
                 <li><a href="#stepSix" data-toggle="tab" role="tab" id="stepSix-tab">Which blade</a></li>
-                <li><a href="#stepSeven" data-toggle="tab" role="tab" id="stepSeven-tab">Review</a></li>
+                <li><a href="#stepSeven" data-toggle="tab" role="tab" id="stepSeven-tab">The lid?</a></li>
             </ul>
 		</div>
 		
-		<div class="container">
+		
 		
 			<div class="tab-content">
 			
@@ -226,18 +226,17 @@
 			            <input type='button' class='btn btn-previous btn-fill btn-secondary btn-wd' name='previous' value='Previous' />
 			        </div>
 			        <div class="col text-right">
-			            <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+<!-- 			            <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' /> -->
 			            <a href="/blend" class='btn btn-finish btn-fill btn-primary btn-wd' name='finish'>Blend it!</a>
 			        </div>
 				</div>
 			</div>
 		
-		</div>
+		
 	
 	</form>
-
-</section>
-
+	</section>
+</div>
 
 @section Scripts {
 	<script src="~/js/jquery.bootstrap.wizard.js"></script>

@@ -8533,14 +8533,14 @@ a.text-dark:focus, a.text-dark:hover {
   .wizard-card .wizard-header {
     text-align: center; }
   .wizard-card .wizard-navigation {
-    position: relative; }
-    .wizard-card .wizard-navigation .nav-pills {
-      background-color: rgba(200, 200, 200, 0.2); }
-      .wizard-card .wizard-navigation .nav-pills li {
-        text-align: center; }
-        .wizard-card .wizard-navigation .nav-pills li a {
-          color: #495057;
-          font-size: 0.875rem; }
+    position: relative;
+    background-color: rgba(200, 200, 200, 0.2);
+    border-radius: 4rem; }
+    .wizard-card .wizard-navigation .nav-pills li {
+      text-align: center; }
+      .wizard-card .wizard-navigation .nav-pills li a {
+        color: #495057;
+        font-size: 0.875rem; }
   .wizard-card .moving-tab {
     position: absolute;
     text-align: center;
@@ -8551,8 +8551,8 @@ a.text-dark:focus, a.text-dark:hover {
     color: #fff;
     cursor: pointer;
     padding: 4px 0;
-    background: #007bff;
-    box-shadow: 0 16px 26px -10px rgba(0, 123, 255, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 123, 255, 0.2);
+    background: #495057;
+    box-shadow: 0 16px 26px -10px rgba(73, 80, 87, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(73, 80, 87, 0.2);
     font-family: "AvenirNext-Bold", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   .wizard-card .btn-finish,
   .wizard-card .btn.disabled {
@@ -10199,3 +10199,37 @@ header,
     transform: translate(0); }
   100% {
     transform: translate(-2400px, 0); } }
+
+.scene {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative; }
+  .scene .layer {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative; }
+  .scene .splash {
+    height: 396px;
+    width: 449px;
+    background-image: url("../images/landing/logo.png");
+    background-repeat: no-repeat;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: -198px;
+    margin-left: -225px;
+    z-index: 2; }
+  .scene h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -76px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.3); }

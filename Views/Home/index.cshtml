@@ -7,12 +7,15 @@
 	.fixed-top {background-color: rgba(255,255,255,0.95) !important;}
 </style>
 
-<header class="bg-primary">
-	<div class="wrap container">
-		<div class="content center-center text-center">
-			<img src="~/images/landing/logo.png" class="img-fluid mx-auto">
-		</div>
-	</div>
+<header class="pri-gradient-darker">
+	<ul id="scene" class="scene"
+			data-friction-x="0.3"
+			data-friction-y="0.3"
+			data-scalar-x="15"
+			data-scalar-y="15">
+		<li class="layer" data-depth="0.10"><h1 class="">Blender</h1></li>
+		<li class="layer" data-depth="0.20"><div class="splash"></div></li>
+	</ul>
 	<img src="~/images/landing/shape-up.png" class="shape-up img-fluid">
 </header>
 
@@ -210,7 +213,7 @@
 
 
 
-<section class="bg-primary inner-shapes" style="height: 1000px">
+<section class="pri-gradient-darker inner-shapes" style="height: 1000px">
 	<img src="~/images/landing/shape-up.png" class="shape-up img-fluid">
 	<img src="~/images/landing/shape-down.png" class="shape-down img-fluid">
 </section>
@@ -218,7 +221,8 @@
 <section class="bg-white" style="height: 400px"></section>
 
 @section Scripts {
-	<script src="~/js/parallax.js"></script>
+	<script src="~/js/full-bg.js"></script>
+	<script src="~/js/parallax-scene.js"></script>
 	<script>
 		// Parallax BG Images
 		$(document).ready(function(){
@@ -235,5 +239,8 @@
 		        }
 		    });
 		});
+		// Parallax Scene
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
 	</script>
 }

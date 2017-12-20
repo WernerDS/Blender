@@ -150,3 +150,43 @@ header,
 		transform:translate(-2400px, 0);
 	} 
 }
+
+
+
+.scene {
+	display: block;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    .layer {
+	    display: block;
+	    height: 100%;
+	    width: 100%;
+	    padding: 0;
+	    margin: 0;
+	    position: relative;
+    }
+	.splash {
+	    height: 396px;
+	    width: 449px;
+	    background-image: url("../images/landing/logo.png");
+	    background-repeat: no-repeat;
+	    top: 50%;
+	    position: absolute;
+	    left: 50%;
+	    margin-top: -198px;
+	    margin-left: -225px;
+	    z-index: 2;
+	}
+	h1 {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin-top: -40px;
+	    margin-left: -76px;
+	    z-index: 1;
+	    color: rgba($black, 0.3);
+	}
+}
