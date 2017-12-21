@@ -1,0 +1,75 @@
+
+
+.activity {
+    width: 100%;
+    margin: 0 0 40px 0;
+    padding: 0;
+    li {
+	    display: block;
+	    padding: $spacer $spacer $spacer ($spacer*6);
+	    //background: $white;
+	    border-radius: $border-radius-lg;
+	    position: relative;
+	    margin-bottom: $spacer;
+	    border: $border-width solid $border-color;
+	    div {
+		    position: absolute;
+		    left: $spacer;
+		    top: 43px;
+		    height: 50px;
+		    width: 50px;
+		    border-radius: 50%;
+		    background: $gray-200;
+		    margin-top: -25px;
+		    text-align: center;
+		    svg {
+			    line-height: 50px;
+			    height: 50px;
+		    }
+	    }
+	    h3 {
+		    line-height: 25px;
+	    }
+	    p {
+		    margin: 0;
+	    }
+	    pre {
+		    margin-bottom: 0;
+		    margin-top: $spacer/2;
+		    font-weight: normal;
+	    }
+	}
+	&.activity-summary {
+		li {
+			padding: $spacer ($spacer*6);
+			span {
+				position: absolute;
+				right: $spacer;
+				top: 20px;
+			}
+			&:after {
+				position: absolute;
+				content: "";
+				height: $spacer;
+				width: $border-width;
+				background: $border-color;
+				left: 20px;
+				top: -18px;
+				z-index: -1;
+			}
+			&.date {
+				border: none;
+				padding: 0;
+				em {
+					background: $border-color;
+					border-radius: 1rem;
+					padding: 0 $spacer;
+					font-style: normal;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}

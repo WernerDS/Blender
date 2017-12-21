@@ -8697,22 +8697,63 @@ a.text-dark:focus, a.text-dark:hover {
     transform: skewY(-12deg);
     background: #f6f9fc; }
 
-.summary {
-  display: flex;
+.activity {
   width: 100%;
-  background-clip: padding-box; }
-  .summary .stat-block {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border: 2px solid #e9ecef;
-    border-left: 0 none;
-    flex: 1 1 100%;
-    text-align: center; }
-    .summary .stat-block:first-child {
-      border-left: 2px solid #e9ecef;
-      border-radius: 0.25rem 0 0 0.25rem; }
-    .summary .stat-block h3 {
-      margin-bottom: 0; }
+  margin: 0 0 40px 0;
+  padding: 0; }
+  .activity li {
+    display: block;
+    padding: 1rem 1rem 1rem 6rem;
+    border-radius: 0.3rem;
+    position: relative;
+    margin-bottom: 1rem;
+    border: 2px solid #e9ecef; }
+    .activity li div {
+      position: absolute;
+      left: 1rem;
+      top: 43px;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background: #e9ecef;
+      margin-top: -25px;
+      text-align: center; }
+      .activity li div svg {
+        line-height: 50px;
+        height: 50px; }
+    .activity li h3 {
+      line-height: 25px; }
+    .activity li p {
+      margin: 0; }
+    .activity li pre {
+      margin-bottom: 0;
+      margin-top: 0.5rem;
+      font-weight: normal; }
+  .activity.activity-summary li {
+    padding: 1rem 6rem; }
+    .activity.activity-summary li span {
+      position: absolute;
+      right: 1rem;
+      top: 20px; }
+    .activity.activity-summary li:after {
+      position: absolute;
+      content: "";
+      height: 1rem;
+      width: 2px;
+      background: #e9ecef;
+      left: 20px;
+      top: -18px;
+      z-index: -1; }
+    .activity.activity-summary li.date {
+      border: none;
+      padding: 0; }
+      .activity.activity-summary li.date em {
+        background: #e9ecef;
+        border-radius: 1rem;
+        padding: 0 1rem;
+        font-style: normal; }
+      .activity.activity-summary li.date:after {
+        display: none; }
 
 .dropdown-item {
   font-family: "AvenirNext-Bold", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
@@ -9130,39 +9171,6 @@ body {
 
 .shift-up {
   margin-top: -50px; }
-
-.activity {
-  width: 100%;
-  margin: 0 0 40px 0;
-  padding: 0; }
-  .activity li {
-    display: block;
-    padding: 1rem 1rem 1rem 6rem;
-    border-radius: 0.3rem;
-    position: relative;
-    margin-bottom: 1rem;
-    border: 2px solid #e9ecef; }
-    .activity li div {
-      position: absolute;
-      left: 1rem;
-      top: 43px;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      background: #e9ecef;
-      margin-top: -25px;
-      text-align: center; }
-      .activity li div svg {
-        line-height: 50px;
-        height: 50px; }
-    .activity li h3 {
-      line-height: 25px; }
-    .activity li p {
-      margin: 0; }
-    .activity li pre {
-      margin-bottom: 0;
-      margin-top: 0.5rem;
-      font-weight: normal; }
 
 .mc-table th {
   word-break: normal;
