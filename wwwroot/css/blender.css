@@ -8697,6 +8697,23 @@ a.text-dark:focus, a.text-dark:hover {
     transform: skewY(-12deg);
     background: #f6f9fc; }
 
+.summary {
+  display: flex;
+  width: 100%;
+  background-clip: padding-box; }
+  .summary .stat-block {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 2px solid #e9ecef;
+    border-left: 0 none;
+    flex: 1 1 100%;
+    text-align: center; }
+    .summary .stat-block:first-child {
+      border-left: 2px solid #e9ecef;
+      border-radius: 0.25rem 0 0 0.25rem; }
+    .summary .stat-block h3 {
+      margin-bottom: 0; }
+
 .dropdown-item {
   font-family: "AvenirNext-Bold", "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
   .dropdown-item .svg-inline--fa {

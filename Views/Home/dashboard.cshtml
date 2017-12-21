@@ -4,14 +4,14 @@
 <section class="section">
 	<div class="container">
 		<div class="row">
-			<div class="col">
+			<div class="col text-center">
 				<h1 class="display-4">Cocktail Mix One</h1>
 				<div class="mt-1"><div class="badge badge-pill badge-secondary">Created Dec 15, 2017 08:48 am</div></div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<div class="mixer synced my-4 mr-auto ml-0">
+				<div class="mixer my-4">
 					<div class="ingedient active">
 						<i class="fab fa-freebsd fa-3x"></i>
 						<h6>My Service Name</h6>
@@ -19,32 +19,52 @@
 					<div class="blade blade-left blade-right active">
 						<i class="fas fa-clock fa-2x"></i>
 					</div>
-					<div class="ingedient active">
+					<div class="ingedient error">
 						<i class="fab fa-codepen fa-3x"></i>
 						<h6>Third Service Name</h6>
 					</div>
 				</div>
-				<h6>Last Activity</h6>
-				<ul class="activity">
+				<div class="summary mb-4">
+					<div class="stat-block">
+						<h5>Changes</h5>
+						<h3><a href="">23</a></h3>
+					</div>
+					<div class="stat-block">
+						<h5>Synced</h5>
+						<h3><a href="">20</a></h3>
+					</div>
+					<div class="stat-block">
+						<h5>Errors</h5>
+						<h3><a href="" class="text-danger">3</a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">	
+				<h3>Latest Activity</h3>
+				<ul class="activity mb-4">
 		            <li>
-						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
-						<h3>Services blended</h3>
+						<div class="bg-danger"><i class="fas fa-exclamation fa-lg text-white"></i></div>
+						<h3>Service unplugged</h3>
 						<p>Dec 15, 2017 14:21 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-sync fa-spin fa-lg"></i></div>
+						<h3>Blend syncing</h3>
+						<p>Dec 15, 2017 09:01 am</p>
+					</li>
+					<li>
+						<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+						<h3>Blend created</h3>
+						<p>Dec 15, 2017 08:48 am</p>
 					</li>
 				</ul>
 			</div>
 			<div class="col">
-				<ul class="h6">
-					<li>Latest Blend: <span class="badge badge-pill badge-secondary">Cocktail Mix One</span></li>
-					<li>Blend Status: <a href="/blend-one" class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i>Blend is Goooood!</a></li>
-					<li>Time Now: <span class="badge badge-pill badge-secondary clock"><span class="time"><span class="time__hours"></span><span class="time__min"></span><span class="time__sec"></span></span></span></li>
-					<li>Create date: <span class="badge badge-pill badge-secondary">Dec 15, 2017 08:48 am</span></li>
-					<li>Last blend date: <span class="badge badge-pill badge-secondary">Today at 9:00am</span></li>
-					<li>Changes: <a href="" class="badge badge-pill badge-primary">23</a></li>
-					<li>Errors: <a href="" class="badge badge-pill badge-danger">2</a></li>
-				</ul>
-				
+				<h3>Latest Errors</h3>
 			</div>
 		</div>
+				
 	</div>
 </section>
