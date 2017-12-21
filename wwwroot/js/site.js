@@ -32,3 +32,26 @@ $(document).ready(function () {
     }
 });
 
+// Clock
+'use strict';
+$(document).ready(function () {
+    if($('.clock')[0]) {
+        var newDate = new Date();
+        newDate.setDate(newDate.getDate());
+
+        setInterval( function() {
+            var seconds = new Date().getSeconds();
+            $('.time__sec').html(( seconds < 10 ? '0' : '' ) + seconds);
+        },1000);
+
+        setInterval( function() {
+            var minutes = new Date().getMinutes();
+            $('.time__min').html(( minutes < 10 ? '0' : '' ) + minutes);
+        },1000);
+
+        setInterval( function() {
+            var hours = new Date().getHours();
+            $('.time__hours').html(( hours < 10 ? '0' : '' ) + hours);
+        }, 1000);
+    }
+});
