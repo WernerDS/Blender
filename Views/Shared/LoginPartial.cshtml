@@ -7,11 +7,10 @@
 @if (SignInManager.IsSignedIn(User))
 {
 	<ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
-		<li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
-		<li class="nav-item"><a class="nav-link" href="/my-services">My Services</a></li>
 		<li class="nav-item"><a class="nav-link" href="/my-blends">My Blends</a></li>
-<!-- 		<li class="nav-item"><a class="nav-link" href="/activity">Activity</a></li> -->
+		<li class="nav-item"><a class="nav-link" href="/my-services">My Services</a></li>
+		<li class="nav-item"><a class="nav-link" href="/search">Search</a></li>
+		<li class="nav-item"><a class="nav-link" href="/activity">Activity</a></li>
   	</ul>
     <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm" class="form-inline">
 	    <ul class="navbar-nav">
