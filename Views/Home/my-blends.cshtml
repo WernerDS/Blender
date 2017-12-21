@@ -2,16 +2,15 @@
     ViewData["Title"] = "My Blends";
 }
 
-<section class="section">
+<section class="section pt-4">
 	<div class="container-fluid">
 		<div class="row mb-4">
-			<div class="col">
-				<h2>@ViewData["Title"]</h2>
-				<a href="/new-blend" class="btn btn-outline-primary top-right-btn"><i class="fas fa-plus"></i> New Blend</a>
+			<div class="col text-right">
+				<a href="/new-blend" class="btn btn-outline-primary"><i class="fas fa-plus"></i> New Blend</a>
 			</div>
 		</div>
 	</div>
-		
+
 	<table class="table table-lg table-hover">
 		<tbody>
 			<tr>
@@ -210,3 +209,18 @@
 	</table>
 	
 </section>
+
+<section class="section pt-4">
+	<div class="container-fluid">
+		<div class="my-4 text-center empty-state">
+			<p>You don’t have any Blends</p>
+			<p>Blends work with all your favourite services</p>
+			<a href="/new-blend" class="btn btn-primary mt-3"><i class="fas fa-plus"></i> Create blend</a>
+		</div>
+	</div>
+</section>
+
+
+@section Scripts {
+
+}

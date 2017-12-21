@@ -8911,6 +8911,9 @@ a.text-dark:focus, a.text-dark:hover {
 body {
   padding-top: 84px; }
 
+.main-content {
+  min-height: 70vh; }
+
 .container {
   position: relative; }
 

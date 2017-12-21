@@ -32,6 +32,11 @@ $(document).ready(function () {
     }
 });
 
+// FA 5 Pseudo
+window.FontAwesomeConfig = {
+	searchPseudoElements: true
+}
+
 // Clock
 'use strict';
 $(document).ready(function () {

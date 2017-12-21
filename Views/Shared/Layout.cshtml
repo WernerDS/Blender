@@ -37,7 +37,9 @@
 	
 	@await Html.PartialAsync("Navigation")
 	
-	@RenderBody()
+	<div class="main-content">
+		@RenderBody()
+	</div>
 	
 	@await Html.PartialAsync("Footer")
     

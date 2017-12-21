@@ -1,9 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Bidvest McCarthy Toyota";
     
-    ViewData["ServiceTitle3"] = "Bidvest McCarthy Toyota";
-	ViewData["ServiceIcon3"] = "fa-grunt";
-	ViewData["ServiceCreate3"] = "Feb 10, 2017 9:48 am";
+    ViewData["ServiceTitle"] = "Bidvest McCarthy Toyota";
+	ViewData["ServiceIcon"] = "fa-grunt";
+	ViewData["ServiceCreate"] = "Feb 10, 2017 9:48 am";
 }
 
 <section class="section pri-gradient-darker">
@@ -13,15 +13,10 @@
 		
 		<div class="row">
 			<div class="col">
-				<i class="fab @ViewData["ServiceIcon3"] fa-5x"></i>
-				<h1 class="display-4 mt-4">@ViewData["ServiceTitle3"]</h1>
-				<div class="mt-1 mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate3"]</div></div>
-				
-				<label class="switch" id="switch-funtion">
-					<input type="checkbox">
-					<span class="slider round"></span>
-				</label>
-				
+				<i class="fab @ViewData["ServiceIcon"] fa-5x"></i>
+				<div class="mb-4"><div class="badge badge-pill badge-secondary"><i class="fas fa-exclamation-circle"></i> Inactive</div></div>
+				<h1 class="display-4 mt-4">@ViewData["ServiceTitle"]</h1>
+				<div class="mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate"]</div></div>
 			</div>
 		</div>
 	</div>

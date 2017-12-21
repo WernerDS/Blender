@@ -19,15 +19,16 @@
 }
 
 
-<section class="section">
+<section class="section pt-4">
 	<div class="container-fluid">
 		<div class="row mb-4">
-			<div class="col">
-				<h2>@ViewData["Title"]</h2>
-				<a href="/search" class="btn btn-outline-primary top-right-btn"><i class="fas fa-plus"></i> New Service</a>
+			<div class="col text-right">
+				<a href="/search" class="btn btn-outline-primary"><i class="fas fa-plus"></i> New Service</a>
 			</div>
 		</div>
 	</div>
+	
+		
 		
 		<table class="table table-lg table-hover">
 			<tbody>
@@ -153,3 +154,17 @@
 
 </section>
 
+
+<section class="section pt-4">
+	<div class="container-fluid">
+		<div class="text-center empty-state">
+			<p>You don’t have any Services connected</p>
+			<p>Blends work with all your favourite services</p>
+			<a href="/search" class="btn btn-primary mt-3"><i class="fas fa-plus"></i> Setup service</a>
+		</div>
+	</div>
+</section>
+
+@section Scripts {
+
+}
