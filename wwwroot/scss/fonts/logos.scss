@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'logoFont';
+  src:  url('../fonts/logos/logos.eot?vnbnpc');
+  src:  url('../fonts/logos/logos.eot?vnbnpc#iefix') format('embedded-opentype'),
+    	url('../fonts/logos/logos.ttf?vnbnpc') format('truetype'),
+		url('../fonts/logos/logos.woff?vnbnpc') format('woff'),
+		url('../fonts/logos/logos.svg?vnbnpc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 8rem;
+}
+
+[class^="logo-"], [class*=" logo-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'logoFont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo-ananzi:before {
+  content: "\e900";
+}
+.logo-automart:before {
+  content: "\e901";
+}
+.logo-autoslm:before {
+  content: "\e902";
+}
+.logo-Autoxloo .path1:before {
+  content: "\e903";
+  color: rgb(7, 117, 251);
+}
+.logo-Autoxloo .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(7, 117, 251);
+}
+.logo-Autoxloo .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(7, 117, 251);
+}
+.logo-Autoxloo .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.logo-Autoxloo .path5:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.logo-barloworld:before {
+  content: "\e908";
+}
+.logo-carfind:before {
+  content: "\e909";
+}
+.logo-clearassets:before {
+  content: "\e90a";
+}
+.logo-dunquip:before {
+  content: "\e90b";
+}
+.logo-evernote:before {
+  content: "\e90c";
+}
+.logo-gumtree:before {
+  content: "\e90d";
+}
+.logo-hyundai:before {
+  content: "\e90e";
+}
+.logo-imperialauto:before {
+  content: "\e90f";
+}
+.logo-imperialselect:before {
+  content: "\e910";
+}
+.logo-indeed:before {
+  content: "\e911";
+}
+.logo-ix:before {
+  content: "\e912";
+}
+.logo-jobmail:before {
+  content: "\e913";
+}
+.logo-junkmail:before {
+  content: "\e914";
+}
+.logo-mascus:before {
+  content: "\e915";
+}
+.logo-olx:before {
+  content: "\e916";
+}
+.logo-privateproperty:before {
+  content: "\e917";
+}
+.logo-property24:before {
+  content: "\e918";
+}
+.logo-toyota:before {
+  content: "\e919";
+}
+.logo-truckandtrailer:before {
+  content: "\e91a";
+}

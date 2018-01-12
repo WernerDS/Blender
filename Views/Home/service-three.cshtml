@@ -1,8 +1,8 @@
 ﻿@{
     ViewData["Title"] = "Third Service Name";
     
-    ViewData["ServiceTitle"] = "Third Service Name";
-	ViewData["ServiceIcon"] = "fa-codepen";
+    ViewData["ServiceTitle"] = "OLX";
+	ViewData["ServiceIcon"] = "logo-olx";
 	ViewData["ServiceCreate"] = "Jan 16, 2017 9:17 am";
 }
 
@@ -13,7 +13,7 @@
 		
 		<div class="row">
 			<div class="col">
-				<i class="fab @ViewData["ServiceIcon"] fa-5x"></i>
+				<i class="@ViewData["ServiceIcon"] fa-5x"></i>
 				<div class="mb-4"><div class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i> Active</div></div>
 				<h1 class="display-4 mt-4">@ViewData["ServiceTitle"]</h1>
 				<div class="mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate"]</div></div>
