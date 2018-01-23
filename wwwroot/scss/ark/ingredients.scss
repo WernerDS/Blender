@@ -14,11 +14,14 @@ $sync-width-sm: 20px;
 	    float: left;
 	    border: 2px solid $border-color;
 	    text-align: center;
-	    border-radius: 1rem;
+	    border-radius: 2rem;
 	    background: $white;
 	    transition: $transition-base;
-	    .svg-inline--fa {
-		    height: 76px;
+	    img {
+			display: block;
+			margin: 0 auto;
+			max-width: 90%;
+			height: 76px;
 	    }
 	    h6 {
 		    margin: 0 ($spacer / 2);
@@ -45,6 +48,11 @@ $sync-width-sm: 20px;
 	    }
 	    &.selected {
 		    border-color: $body-color;
+	    }
+	}
+	.blade {
+		&.error {
+		    border-color: $warning !important;
 	    }
 	}
 	a {
@@ -126,6 +134,8 @@ $sync-width-sm: 20px;
 		.blade {
 			width: 40px;
 		    height: 40px;
+		    font-family: $headings-font-family;
+		    line-height: 37px;
 		    .svg-inline--fa {
 			    height: 36px;
 		    }
@@ -202,4 +212,8 @@ $sync-width-sm: 20px;
 		-webkit-mask-position:11px 0;
 		mask-position:11px 0
 	}
+}
+
+.category-list {
+	text-align: left;
 }

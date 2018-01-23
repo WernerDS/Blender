@@ -43,13 +43,14 @@
 		    .service-logo {
 			    display: block;
 			    margin: 0 auto;
-			    max-width: 100%;
+			    max-width: 90%;
 			    height: 76px;
+			    color: $body-color;
 			}
 			.feed-name {
 			    //display: block;
 			    //margin-top: 1rem;
-			    color: $body-color;
+			    color: $primary;
 			    //font-weight: bold;
 			    //line-height: 1.1;
 			}
@@ -84,6 +85,9 @@
 						color: $danger;
 					}
 				}
+				img {
+					opacity: 0.5;
+				}
 				&:hover {
 					background: $gray-200;
 					cursor: default;
@@ -106,8 +110,31 @@
 		&.free {
 			&:before {
 				@extend .badge;
-				@extend .badge-success;
+				@extend .badge-info;
 				content: "Free";
+				position: absolute;
+				right: 3px;
+				top: 3px;
+				font-size: 75%;
+			}
+		}
+		&.send,
+		&[data-service="send"] {
+			&:before {
+				@extend .badge;
+				@extend .badge-success;
+				content: "Send Only";
+				position: absolute;
+				right: 3px;
+				top: 3px;
+				font-size: 75%;
+			}
+		}
+		&[data-service="fix"] {
+			&:before {
+				@extend .badge;
+				@extend .badge-danger;
+				content: "Fix Now";
 				position: absolute;
 				right: 3px;
 				top: 3px;

@@ -1,0 +1,209 @@
+﻿@{
+    ViewData["Title"] = "MascusAutomart";
+}
+
+<section class="section pri-gradient-lighter my-blend">
+	<div class="container text-white text-center">
+		<a href="/my-blends" class="btn btn-outline-light top-left-btn"><i class="fa fa-chevron-left"></i> All Blends</a>
+		<div class="row">
+			<div class="col">
+				<h1 class="display-4">@ViewData["Title"]</h1>
+				<div class="mt-1"><div class="badge badge-pill badge-transparent">Created Dec 15, 2017 08:48 am</div></div>
+				
+				<div class="mixer on-color synced my-4">
+					<div class="ingedient active">
+						<img src="~/images/logos/mascus-white.svg">
+						<h6>Mascus</h6>
+					</div>
+					<div class="blade blade-left blade-right active">
+						<i class="fas fa-clock fa-2x"></i>
+					</div>
+					<div class="ingedient active">
+						<img src="~/images/logos/automart-white.svg">
+						<h6>Auto Mart</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="tab-container blend">
+	<div class="container">
+	    <ul class="nav nav-tabs nav-fill" role="tablist">
+	        <li class="nav-item">
+	            <a class="nav-link active" data-toggle="tab" href="#home-2" role="tab">Categories</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#changes-2" role="tab">Changes <div class="badge badge-dark">3</div></a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#fields-2" role="tab">Fields</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#activity-3" role="tab">Activity</a>
+	        </li>
+	    </ul>
+	
+	    <div class="tab-content">
+	        <div class="tab-pane active fade show" id="home-2" role="tabpanel">
+		        <div class="container">
+			        <div class="row">
+				        <div class="col-md-4">
+				            <h4>Branches</h4>
+				            <ul class="fa-ul">
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Edenvale</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Edwin Swales</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Empangeni</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Gezina</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Hatfield</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Lynnwood</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Midrand</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>N1 City</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Paarl</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pietermaritzburg</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pinetown</li>
+				            </ul>
+				        </div>
+				        <div class="col-md-4">
+				            <h4>Categories</h4>
+				            <ul class="fa-ul">
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Vehicles</li>				            
+				            </ul>
+				        </div>
+			        </div>
+		        </div>
+	        </div>
+		    <div class="tab-pane fade" id="changes-2" role="tabpanel">
+			    <div class="container-fluid">
+		            <table class="table table-bordered table-sm table-hover bg-white changes-table">
+						<thead class="thead-light">
+							<tr>
+								<th>#</th>
+								<th>Stock ID</th>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Category</th>
+								<th>Price</th>
+								<th>Condition</th>
+								<th>Ode Meter</th>
+								<th>Fuel Type</th>
+								<th>Year</th>
+								<th>Drivetrain</th>
+								<th>Colour</th>
+								<th>Location</th>
+								<th>Images</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>4300345</td>
+								<td><div class="truncate">Toyota Land Cruiser 76 4.2D station wagon 60th Edition 2006</div></td>
+								<td><div class="truncate">RADIO/CD, AIRCON, AIRBAGS, ABS, ELECTRIC WINDOWS, ELECTRIC MIRRORS. PRICE OF VEHICLE EXCLUDES LICENCE AND REG AND ON THE ROAD COST OF R3000 A1 AUTO LAPPIES MOTOR CORPORATION, ADDRESS 282 SUTTER STREET PRETORIA WEST, DEALERS OF QUALITY CARS, WE DELIVER NATIONWIDE, TRADE INS WELCOME, FINANCE AVAILABLE, WE BUY CARS FOR CASH, WWW.A1AUTO.CO.ZA</div></td>
+								<td>Cars</td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="from R 210,000">R 214,000</div></td>
+								<td>Used</td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="368000 km">368500 km</div></td>
+								<td>Diesel</td>
+								<td>2006</td>
+								<td>AWD</td>
+								<td>White</td>
+								<td><div class="truncate">282 Soutter street, Gauteng</div></td>
+								<td>5</td>
+							</tr>
+						</tbody>
+		            </table>
+			    </div>
+		    </div>
+	        <div class="tab-pane fade" id="fields-2" role="tabpanel">
+	            <table class="table table-bordered table-sm table-hover bg-white shuffle-table">
+					<thead class="thead-light">
+						<tr>
+							<th width="33%" style="text-align: right"><img src="/images/logos/mascus.svg"></th>
+							<th width="33%" style="text-align: center">Matching Fields</th>
+							<th width="33%"><img src="/images/logos/automart.svg"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>DealerProductID</td>
+							<td align="center"><div class="badge badge-light">521</div></td>
+							<td>DealerID</td>
+						</tr>
+						<tr>
+							<td>Name</td>
+							<td align="center"><div class="badge badge-light">HINO-Cruiser</div></td>
+							<td>Name</td>
+						</tr>
+						<tr>
+							<td>QCategoryName</td>
+							<td align="center"><div class="badge badge-light">Truck Tractors</div></td>
+							<td>CategoryName</td>
+						</tr>
+						<tr>
+							<td>InternalStockNumber</td>
+							<td align="center"><div class="badge badge-light">RAVT101</div></td>
+							<td>StockNumber</td>
+						</tr>
+						<tr>
+							<td>Brand</td>
+							<td align="center"><div class="badge badge-light">HINO</div></td>
+							<td>Brand</td>
+						</tr>
+						<tr>
+							<td>Model</td>
+							<td align="center"><div class="badge badge-light">HINO 57-450 PROFIA (6X4)</div></td>
+							<td>Model</td>
+						</tr>
+						<tr>
+							<td>MeterReadoutHours</td>
+							<td align="center"><div class="badge badge-light">285000</div></td>
+							<td>MeterHours</td>
+						</tr>
+						<tr>
+							<td>Location</td>
+							<td align="center"><div class="badge badge-light">DURBAN</div></td>
+							<td>Location</td>
+						</tr>
+						<tr>
+							<td>YearOfManufacture</td>
+							<td align="center"><div class="badge badge-light">2007</div></td>
+							<td>ManufactureYear</td>
+						</tr>
+						<tr>
+							<td>AttachmentPath1</td>
+							<td align="center"><div class="badge badge-light">item/5/ravt101.jpg</div></td>
+							<td>Attachment1</td>
+						</tr>
+					</tbody>
+				</table>
+	        </div>
+	        <div class="tab-pane fade" id="activity-3" role="tabpanel">
+	            <ul class="activity">
+		            <li>
+						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+						<h3>Services blended</h3>
+						<p>Dec 15, 2017 14:21 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-sync fa-spin fa-lg"></i></div>
+						<h3>Blending</h3>
+						<p>Dec 15, 2017 09:01 am</p>
+					</li>
+					<li>
+						<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+						<h3>Blend created</h3>
+						<p>Dec 15, 2017 08:48 am</p>
+					</li>
+				</ul>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+
+@section Scripts {
+
+}

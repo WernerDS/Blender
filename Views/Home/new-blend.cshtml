@@ -7,72 +7,57 @@
 	<form action="" method="">
 		
 		<div class="wizard-header">
-	    	<h3 class="wizard-title py-4 mb-0">Make a smoothie</h3>
+	    	<h3 class="wizard-title py-4 mb-0">Blend Services</h3>
 		</div>
 			                    	
 		<div class="wizard-navigation">
 			<ul class="nav nav-pills" role="tablist">
-                <!--<li><a href="#stepOne" data-toggle="tab" role="tab" id="stepOne-tab">Setup blend</a></li>-->
-                <li><a href="#stepTwo" data-toggle="tab" role="tab" id="stepTwo-tab">1st ingredient</a></li>
-                <!--<li><a href="#stepThree" data-toggle="tab" role="tab" id="stepThree-tab">Quick review</a></li>-->
-                <li><a href="#stepFour" data-toggle="tab" role="tab" id="stepFour-tab">2nd ingredient</a></li>
-                <!--<li><a href="#stepFive" data-toggle="tab" role="tab" id="stepFive-tab">Blend it</a></li>-->
-                <li><a href="#stepSix" data-toggle="tab" role="tab" id="stepSix-tab">Which blade</a></li>
-                <li><a href="#stepSeven" data-toggle="tab" role="tab" id="stepSeven-tab">The lid?</a></li>
+                <li><a href="#stepOne" data-toggle="tab" role="tab" id="stepOne-tab">Import FROM</a></li>
+                <li><a href="#stepTwo" data-toggle="tab" role="tab" id="stepTwo-tab">Category setup</a></li>
+                <li><a href="#stepThree" data-toggle="tab" role="tab" id="stepThree-tab">Import TO</a></li>
+                <li><a href="#stepFour" data-toggle="tab" role="tab" id="stepFour-tab">How to blend</a></li>
+                <li><a href="#stepFive" data-toggle="tab" role="tab" id="stepFive-tab">Double check</a></li>
             </ul>
 		</div>
 		
 		
 		
 			<div class="tab-content">
-			
-				<!--<section id="stepOne" class="tab-pane fade show active" role="tabpanel">
-					<div class="container text-center">
-						<div class="badge badge-pill badge-secondary mb-4">1. Setup blend</div>
-						<div class="mixer">
-							<a href="javascript:void(0)" class="ingedient to-choose">
-								<i class="fas fa-plus fa-3x"></i>
-								<h6>Select Ingredient</h6>
-							</a>
-							<a href="javascript:void(0)" class="blade to-choose">
-								<i class="fas fa-plus fa-2x"></i>
-							</a>
-							<a href="javascript:void(0)" class="ingedient to-choose">
-								<i class="fas fa-plus fa-3x"></i>
-								<h6>Select Ingredient</h6>
-							</a>
-						</div>
-					</div>
-				</section>-->
-				
-				<section id="stepTwo" class="tab-pane fade" role="tabpanel">
+
+				<section id="stepOne" class="tab-pane fade" role="tabpanel">
 					<div class="container text-center">
 						
-						<div class="badge badge-pill badge-secondary mx-auto mb-4">2. 1st service</div>
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">Import stock FROM: (Demo choose TOYOTA)</div>
 						
 						<ul class="list">
 							<li>
 								<a href="javascript:void(0)">
-									<i class="logo-automart fa-5x service-logo"></i>
+									<img src="/images/logos/automart.svg">
 									<h6 class="feed-name">Auto Mart</h6>
 								</a>
 							</li>
 							<li>
 								<a href="javascript:void(0)">
-									<i class="logo-junkmail fa-5x service-logo"></i>
-									<h6 class="feed-name">Junk Mail</h6>
-								</a>
-							</li>
-							<li>
-								<a href="javascript:void(0)">
-									<i class="logo-olx fa-5x service-logo"></i>
+									<img src="/images/logos/olx.svg">
 									<h6 class="feed-name">OLX</h6>
 								</a>
 							</li>
-							<li>
-								<div class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
-									<i class="logo-toyota fa-5x service-logo"></i>
+							<li data-service="send">
+								<a href="javascript:void(0)">
+									<img src="/images/logos/toyota.svg">
 									<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
+								</a>
+							</li>
+							<li data-service="send">
+								<a href="javascript:void(0)">
+									<img src="/images/logos/mascus.svg">
+									<h6 class="feed-name">Mascus</h6>
+								</a>
+							</li>
+							<li data-service="fix">
+								<div class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
+									<img src="/images/logos/ix.svg">
+									<h6 class="feed-name">IX</h6>
 								</div>
 							</li>
 							<li>
@@ -85,57 +70,273 @@
 					</div>
 				</section>
 				
-				<!--<section id="stepThree" class="tab-pane fade" role="tabpanel">
+				<section id="stepTwo" class="tab-pane fade" role="tabpanel">
 					<div class="container text-center">
-						<div class="badge badge-pill badge-secondary mb-4">3. Quick review</div>
-						<div class="mixer">
-							<div class="ingedient selected">
-								<i class="logo-automart fa-3x"></i>
-								<h6>Service Name</h6>
+						<div class="badge badge-pill badge-secondary mb-4">Bidvest McCarthy categories:</div>
+						<div class="row">
+							<div class="col-md-4 text-left">
+								<h5>Branches</h5>
+								<div class="category-list">
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">ALL Branches</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Arcadia</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Ballito</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Bruma</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Centurion</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Durban Kingsmead</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Durban North</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Edenvale</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Edwin Swales</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Empangeni</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Gezina</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Hatfield</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Lynnwood</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Midrand</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">N1 City</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Paarl</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Pietermaritzburg</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Pinetown</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Pre-owned Mobeni</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Richards Bay</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Sinoville</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Woodmead</span>
+									</label>
+									</div>
+									
+								</div>
 							</div>
-							<a href="javascript:void(0)" class="blade to-choose">
-								<i class="fas fa-plus fa-2x"></i>
-							</a>
-							<a href="javascript:void(0)" class="ingedient to-choose">
-								<i class="fas fa-plus fa-3x"></i>
-								<h6>Select Ingredient</h6>
-							</a>
-						</div>
+							<div class="col-md-4 text-left">
+								<h5>Categories</h5>
+								<div class="category-list">
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">ALL Categories</span>
+									</label>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Vehicles</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Property</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Household, Gardening and DIY</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Service, Office and Business</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Jobs</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Electronics</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Pets and Pet Accessories</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Leisure, Sports and Events</span>
+									</label>
+									</div>
+									<div>
+									<label class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" checked>
+										<span class="custom-control-indicator"></span>
+										<span class="custom-control-description">Spares</span>
+									</label>
+									</div>
+								</div>
+							</div>
+								
 					</div>
-				</section>-->
+				</section>
 				
-				<section id="stepFour" class="tab-pane fade" role="tabpanel">
+				<section id="stepThree" class="tab-pane fade" role="tabpanel">
 					<div class="container text-center">
 						
-						<div class="badge badge-pill badge-secondary mx-auto mb-4">4. 2nd service</div>
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">Import from TOYOTA to: (Demo choose AM)</div>
 						
 						<ul class="list">
 							<li>
-								<div class="selected" data-toggle="tooltip" data-placement="top" title="Selected ingredient">
-									<i class="logo-automart fa-5x service-logo"></i>
+								<a href="javascript:void(0)">
+									<img src="/images/logos/automart.svg">
 									<h6 class="feed-name">Auto Mart</h6>
-								</div>
+								</a>
 							</li>
 							<li>
 								<a href="javascript:void(0)">
-									<i class="logo-junkmail fa-5x service-logo"></i>
+									<img src="/images/logos/junkmail.svg">
 									<h6 class="feed-name">Junk Mail</h6>
 								</a>
 							</li>
 							<li>
 								<a href="javascript:void(0)">
-									<i class="logo-olx fa-5x service-logo"></i>
+									<img src="/images/logos/olx.svg">
 									<h6 class="feed-name">OLX</h6>
 								</a>
 							</li>
 							<li>
-								<div class="disabled" data-toggle="tooltip" data-placement="top" title="Not connected">
-									<i class="logo-toyota fa-5x service-logo"></i>
-									<h6 class="feed-name">Bidvest McCarthy Toyota</h6>
-								</div>
-							</li>
-							<li>
-								<a href="/search">
+								<a href="/search" class="new">
 									<i class="fas fa-plus fa-3x service-logo"></i>
 									<h6 class="feed-name">New Service</h6>
 								</a>
@@ -144,29 +345,10 @@
 					</div>
 				</section>
 				
-				<!--<section id="stepFive" class="tab-pane fade" role="tabpanel">
-					<div class="container text-center">
-						<div class="badge badge-pill badge-secondary mb-4">5. Integration</div>
-						<div class="mixer">
-							<div class="ingedient selected">
-								<i class="logo-automart fa-3x"></i>
-								<h6>Service Name</h6>
-							</div>
-							<a href="javascript:void(0)" class="blade to-choose">
-								<i class="fas fa-plus fa-2x"></i>
-							</a>
-							<div class="ingedient selected">
-								<i class="logo-junkmail fa-3x"></i>
-								<h6>Another Service</h6>
-							</div>
-						</div>
-					</div>
-				</section>-->
-				
-				<section id="stepSix" class="tab-pane fade" role="tabpanel">
+				<section id="stepFour" class="tab-pane fade" role="tabpanel">
 					<div class="container text-center">
 						
-						<div class="badge badge-pill badge-secondary mx-auto mb-4">6. Choose integration</div>
+						<div class="badge badge-pill badge-secondary mx-auto mb-4">Choose type of integration</div>
 						
 						<ul class="list">
 							<li>
@@ -191,28 +373,28 @@
 					</div>
 				</section>
 				
-				<section id="stepSeven" class="tab-pane fade" role="tabpanel">
+				<section id="stepFive" class="tab-pane fade" role="tabpanel">
 					<div class="container text-center">
-						<div class="badge badge-pill badge-secondary mb-4">7. Review and Finish</div>
+						<div class="badge badge-pill badge-secondary mb-4">Review and Finish</div>
 						
 						<div class="mixer mb-4">
 							<div class="ingedient selected">
-								<i class="logo-automart fa-5x"></i>
-								<h6>Auto Mart</h6>
+								<img src="~/images/logos/toyota.svg">
+								<h6>Bidvest McCarthy Toyota</h6>
 							</div>
-							<div class="blade blade-left blade-right selected">
+							<div class="blade blade-left blade-right selected" data-toggle="tooltip" data-placement="top" title="Use latest change">
 								<i class="fas fa-clock fa-2x"></i>
 							</div>
 							<div class="ingedient selected">
-								<i class="logo-junkmail fa-5x"></i>
-								<h6>Junk Mail</h6>
+								<img src="~/images/logos/automart.svg">
+								<h6>Auto Mart</h6>
 							</div>
 						</div>
 						
 						<div class="row">
 							<div class="col-md-6 mx-auto text-center">
 								<h3>Name your creation</h3>
-								<input type="text" class="form-control form-control-lg" id="" placeholder="ex. Cocktail Mix...">
+								<input type="text" class="form-control form-control-lg" id="" placeholder="ex. McCarthyAutomart...">
 							</div>
 						</div>
 					</div>
@@ -227,7 +409,7 @@
 			        </div>
 			        <div class="col text-right">
 <!-- 			            <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' /> -->
-			            <a href="/blend" class='btn btn-finish btn-fill btn-primary btn-wd' name='finish'>Blend it!</a>
+			            <a href="/blend-mt-am" class='btn btn-finish btn-fill btn-primary btn-wd' name='finish'>Blend it!</a>
 			        </div>
 				</div>
 			</div>
@@ -242,7 +424,4 @@
 	<script src="~/js/jquery.bootstrap.wizard.js"></script>
 	<script src="~/js/jquery.settings.wizard.js"></script>
 	<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-	<script>
-        
-    </script>
 }

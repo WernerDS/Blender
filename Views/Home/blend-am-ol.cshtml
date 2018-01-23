@@ -1,0 +1,277 @@
+﻿@{
+    ViewData["Title"] = "AutomartOLX";
+}
+
+<section class="section pri-gradient-lighter my-blend">
+	<div class="container text-white text-center">
+		<a href="/my-blends" class="btn btn-outline-light top-left-btn"><i class="fa fa-chevron-left"></i> All Blends</a>
+		<div class="row">
+			<div class="col">
+				<h1 class="display-4">@ViewData["Title"]</h1>
+				<div class="mt-1"><div class="badge badge-pill badge-transparent">Created Dec 15, 2017 08:48 am</div></div>
+				
+				<div class="mixer on-color my-4">
+					<div class="ingedient active">
+						<img src="~/images/logos/automart-white.svg">
+						<h6>Auto Mart</h6>
+					</div>
+					<div class="blade blade-left error">
+						<i class="fas fa-clock fa-2x"></i>
+					</div>
+					<div class="ingedient">
+						<img src="~/images/logos/olx-white.svg">
+						<h6>OLX</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="tab-container blend">
+	<div class="container">
+	    <ul class="nav nav-tabs nav-fill" role="tablist">
+	        <li class="nav-item">
+	            <a class="nav-link active" data-toggle="tab" href="#home-2" role="tab">Categories</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#changes-2" role="tab">Changes <div class="badge badge-dark">9</div></a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#fields-2" role="tab">Fields</a>
+	        </li>
+	        <li class="nav-item">
+	            <a class="nav-link" data-toggle="tab" href="#activity-3" role="tab">Activity</a>
+	        </li>
+	    </ul>
+	</div>
+	    <div class="tab-content">
+	        <div class="tab-pane active fade show" id="home-2" role="tabpanel">
+		        <div class="container">
+			        <div class="row">
+				        <div class="col-md-4">
+				            <h4>Branches</h4>
+				            <ul class="fa-ul">
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pietermaritzburg</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pinetown</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pre-owned Mobeni</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Richards Bay</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Sinoville</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Woodmead</li>
+				            </ul>
+				        </div>
+				        <div class="col-md-4">
+				            <h4>Categories</h4>
+				            <ul class="fa-ul">
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Property</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Household, Gardening and DIY</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Service, Office and Business</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Jobs</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Electronics</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Pets and Pet Accessories</li>
+								<li><span class="fa-li"><i class="fas fa-check"></i></span>Leisure, Sports and Events</li>				            
+				            </ul>
+				        </div>
+			        </div>
+		        </div>
+	        </div>
+		    <div class="tab-pane fade" id="changes-2" role="tabpanel">
+			    <div class="container-fluid">
+		            <table class="table table-bordered table-sm table-hover bg-white changes-table">
+						<thead class="thead-light">
+							<tr>
+								<th>#</th>
+								<th>Stock ID</th>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Category</th>
+								<th>Price</th>
+								<th>Condition</th>
+								<th>Ode Meter</th>
+								<th>Fuel Type</th>
+								<th>Year</th>
+								<th>Drivetrain</th>
+								<th>Colour</th>
+								<th>Location</th>
+								<th>Images</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>4300345</td>
+								<td><div class="truncate">Toyota Land Cruiser 76 4.2D station wagon 60th Edition 2006</div></td>
+								<td><div class="truncate">RADIO/CD, AIRCON, AIRBAGS, ABS, ELECTRIC WINDOWS, ELECTRIC MIRRORS. PRICE OF VEHICLE EXCLUDES LICENCE AND REG AND ON THE ROAD COST OF R3000 A1 AUTO LAPPIES MOTOR CORPORATION, ADDRESS 282 SUTTER STREET PRETORIA WEST, DEALERS OF QUALITY CARS, WE DELIVER NATIONWIDE, TRADE INS WELCOME, FINANCE AVAILABLE, WE BUY CARS FOR CASH, WWW.A1AUTO.CO.ZA</div></td>
+								<td>Cars</td>
+								<td><div class="badge badge-success" data-toggle="popover" data-placement="top" data-content="from R 210,000">R 214,000</div></td>
+								<td>Used</td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="368000 km">368500 km</div></td>
+								<td>Diesel</td>
+								<td>2006</td>
+								<td>AWD</td>
+								<td>White</td>
+								<td><div class="truncate">282 Soutter street, Gauteng</div></td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="Added 2 images">5</div></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>4409938</td>
+								<td><div class="truncate">VW Golf GTI 2017</div></td>
+								<td><div class="truncate badge badge-success" data-toggle="tooltip" data-placement="top" title="Description changed">Club sport S, Cloth seats, 19 Inch alloys, Mfs, Xenon lights, Contact numbers for all hours Eddie 079 097 8133, Justice 083 487 3996, Vaughan 073 020 1037, Mohammed 071 855 9353, Bilal 079 144 2958, Yusuf 084 462 1367, Nkosi 084 852 2888, Lee Ann 060 627 8285, Dave 083 601 4893, Lionel 084 790 5931, Bekani 079 577 3560, Website www.s4auto.co.za</div></td>
+								<td>Cars</td>
+								<td>R 699,950</td>
+								<td>Used</td>
+								<td>3298 km</td>
+								<td>Diesel</td>
+								<td>2017</td>
+								<td>AWD</td>
+								<td>Blue</td>
+								<td><div class="truncate">Corner Wiek and Northrand roads , Gauteng</div></td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>7356773</td>
+								<td><div class="truncate badge badge-success" data-toggle="tooltip" data-placement="top" title="Land Rover 2011">Land Rover Range Rover Supercharged Autobiography 2011</div></td>
+								<td><div class="truncate">Extras: Here we have yet another Beautiful mechanical creation! the Land Rover Range Rover 5.0 S/C Autobiography, Excellent condition.. Good maintenance History, Luxurious and amazingly spacious interior. Features include, Xenon Headlights, PDC, Navigation, rear Entertainment, Surround sound, Automated side steps, Automatic boot open/close, Sunroof, Bluetooth, A/c.</div></td>
+								<td>Cars</td>
+								<td>R 429,900</td>
+								<td>Used</td>
+								<td>141957 km</td>
+								<td>Diesel</td>
+								<td>2011</td>
+								<td>AWD</td>
+								<td>Red</td>
+								<td><div class="truncate badge badge-success" data-toggle="tooltip" data-placement="top" title="Corner Wiek and Northrand roads, Gauteng">131 Van Riebeeck Ave, Edenvale, Gauteng</div></td>
+								<td>24</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>3714975</td>
+								<td><div class="truncate">View all our 2015 Mercedes Benz E Class E63 AMG S Sedan ( Petrol / RWD / Automatic ) cars for sale in Gauteng </div></td>
+								<td><div class="truncate">Black leather seats, Rear camera, Ceramic brakes, Pdc, 19 Inch Alloys, Harmon and Kardon sound system, Mfs, Paddle shift, Navigation, Electric seats, LED intelligent light system, Sunroof, Contact numbers for all hours Eddie 079 097 8133, Justice 083 487 3996, Lionel 084 790 5931, Vaughan 073 020 1037, Mohammed 071 855 9353, Zaheer 082 063 3786, Bilal 079 144 2958, Yusuf 084 462 1367, Riaan 061 296 4413 Website www.s4auto.co.za</div></td>
+								<td>Cars</td>
+								<td><div class="badge badge-danger" data-toggle="tooltip" data-placement="top" title="R 214,000">R 214,000</div></td>
+								<td>Used</td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="22000 km">22947 km</div></td>
+								<td>Diesel</td>
+								<td>2015</td>
+								<td>RWD</td>
+								<td>White</td>
+								<td><div class="truncate">Cnr wiek and north rand road . , Gauteng</div></td>
+								<td><div class="badge badge-success" data-toggle="tooltip" data-placement="top" title="Changed images">8</div></td>
+							</tr>
+						</tbody>
+		            </table>
+			    </div>
+		    </div>
+	        <div class="tab-pane fade" id="fields-2" role="tabpanel">
+		        <div class="container">
+		            <table class="table table-bordered table-sm table-hover bg-white shuffle-table">
+						<thead class="thead-light">
+							<tr>
+								<th width="33%" style="text-align: right"><img src="/images/logos/automart.svg"></th>
+								<th width="33%" style="text-align: center">Matching Fields</th>
+								<th width="33%"><img src="/images/logos/olx.svg"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Stock ID</td>
+								<td align="center"><div class="badge badge-light">521</div></td>
+								<td>DealerID</td>
+							</tr>
+							<tr>
+								<td>Title</td>
+								<td align="center"><div class="badge badge-light">VW Polo</div></td>
+								<td>Name</td>
+							</tr>
+							<tr>
+								<td>Description</td>
+								<td align="center"><div class="badge badge-light">...</div></td>
+								<td>Description</td>
+							</tr>
+							<tr>
+								<td>Category</td>
+								<td align="center"><div class="badge badge-light">Cars</div></td>
+								<td>CategoryName</td>
+							</tr>
+							<tr>
+								<td>Price</td>
+								<td align="center"><div class="badge badge-light">R100,500</div></td>
+								<td>Price</td>
+							</tr>
+							<tr>
+								<td>Condition</td>
+								<td align="center"><div class="badge badge-light">Used</div></td>
+								<td>State</td>
+							</tr>
+							<tr>
+								<td>Ode Meter</td>
+								<td align="center"><div class="badge badge-light">1500 km</div></td>
+								<td>Kilometeres</td>
+							</tr>
+							<tr>
+								<td>FuelType</td>
+								<td align="center"><div class="badge badge-light">Petrol</div></td>
+								<td>FuelType</td>
+							</tr>
+							<tr>
+								<td>Year</td>
+								<td align="center"><div class="badge badge-light">285000</div></td>
+								<td>Year</td>
+							</tr>
+							<tr>
+								<td>Drivetrain</td>
+								<td align="center"><div class="badge badge-light">item/5/ravt101.jpg</div></td>
+								<td>Drivetrain</td>
+							</tr>
+							<tr>
+								<td>Colour</td>
+								<td align="center"><div class="badge badge-light">White</div></td>
+								<td>Color</td>
+							</tr>
+							<tr>
+								<td>Location</td>
+								<td align="center"><div class="badge badge-light">DURBAN</div></td>
+								<td>Seller</td>
+							</tr>
+							<tr>
+								<td>AttachmentPath1</td>
+								<td align="center"><div class="badge badge-light">item/5/ravt101.jpg</div></td>
+								<td>Attachment1</td>
+							</tr>
+						</tbody>
+					</table>
+		        </div>
+	        </div>
+	        <div class="tab-pane fade" id="activity-3" role="tabpanel">
+		        <div class="container">
+		            <ul class="activity">
+			            <li>
+							<div class="bg-warning"><i class="fas fa-exclamation fa-lg text-white"></i></div>
+							<h3>Blender jammed</h3>
+							<p>Dec 15, 2017 14:21 am</p>
+						</li>
+						<li>
+							<div><i class="fas fa-sync fa-spin fa-lg"></i></div>
+							<h3>Blend syncing</h3>
+							<p>Dec 15, 2017 09:01 am</p>
+						</li>
+						<li>
+							<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+							<h3>Blend created</h3>
+							<p>Dec 15, 2017 08:48 am</p>
+						</li>
+					</ul>
+		        </div>
+	        </div>
+	    </div>
+	</div>
+</div>
+
+
+
+@section Scripts {
+
+}

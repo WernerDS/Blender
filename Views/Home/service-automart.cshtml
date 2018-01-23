@@ -1,0 +1,347 @@
+﻿@{
+    ViewData["Title"] = "Auto Mart";
+	ViewData["ServiceCreate"] = "Dec 15, 2017 9:17 am";
+}
+
+<section class="section pri-gradient-lighter">
+	<div class="container text-white text-center">
+		<a href="/my-services" class="btn btn-outline-light top-left-btn"><i class="fas fa-chevron-left"></i> My Services</a>
+		<a href="/new-blend" class="btn btn-outline-light top-right-btn"><i class="icon-blender"></i> Blend Now</a>
+		
+		<div class="row">
+			<div class="col">
+				<img src="~/images/logos/automart-white.svg" style="height:60px">
+				<div class="mb-4"><div class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i> Active</div></div>
+				<h1 class="display-4 mt-4">@ViewData["Title"]</h1>
+				<div class="mb-4"><div class="badge badge-pill badge-transparent">Created @ViewData["ServiceCreate"]</div></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="tab-container blend">
+	<div class="container">
+		<ul class="nav nav-tabs nav-fill" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#dealers" role="tab"><i class="fas fa-users"></i> Dealers <div class="badge badge-primary">30</div></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#categories" role="tab"><i class="fas fa-tags"></i> Categories <div class="badge badge-primary">4</div></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#blends" role="tab"><i class="icon-blender"></i> Blends <div class="badge badge-primary">5</div></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#activity" role="tab"><i class="fas fa-history"></i> Activity</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#settings" role="tab"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+        </ul>
+	</div>
+	
+	<div class="tab-content">
+        <div class="tab-pane active fade show" id="dealers" role="tabpanel">
+	        <div class="container">
+	            <table class="table table-sm">
+	                <thead>
+	                    <tr>
+	                    	<th>List of Dealers</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                    	<td>Dealer Name</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>Dealer Name</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>Dealer Name</td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+        </div>
+        <div class="tab-pane fade" id="categories" role="tabpanel">
+	        <div class="container">
+	            <table class="table table-sm">
+	                <thead>
+	                    <tr>
+	                    	<th>List of Categories</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                    <tr>
+	                    	<td>Used Cars</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>Spare Parts</td>
+	                    </tr>
+	                    <tr>
+	                    	<td>Demo Cars</td>
+	                    </tr>
+	                </tbody>
+	            </table>
+	        </div>
+        </div>
+        <div class="tab-pane fade" id="blends" role="tabpanel">
+	        <div class="container">
+	            <table class="table table-lg table-hover">
+					<tbody>
+						<tr>
+							
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+									<div class="blade blade-left blade-right"  data-toggle="tooltip" data-placement="top" title="Syncing">
+										<i class="fas fa-sync fa-spin fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="Junk Mail">
+										JM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/blend-am-jm">AutomartJunkmail</a></h5>
+								<div>Created <b>Today at 08:48</b></div>
+							</td>
+							<td>
+								<div>Last synced: <b>...</b></div>
+								<div class="text-truncate">Sync status: <div class="badge badge-pill badge-secondary"><i class="fas fa-sync fa-spin"></i> Syncing at 83%</div></div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">...</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td class="text-center">
+								<div class="mixer small synced">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="McCarthy Toyota">
+										MT
+									</div>
+									<div class="blade blade-left blade-right active" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+										<i class="fas fa-clock fa-lg"></i>
+									</div>
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/blend-mt-am">McCarthyAutomart</a></h5>
+								<div>Created <b>Nov 15, 2017 08:48</b></div>
+							</td>
+							<td>
+								<div>Last synced: <b>Dec 13, 2017 9:48 am</b></div>
+								<div class="text-truncate">Sync status: <div class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i> Blend is Goooood!</div></div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">2</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Auto Mart">
+										AM
+									</div>
+									<div class="blade blade-left error" data-toggle="tooltip" data-placement="top" title="Use latest changes">
+										<i class="fas fa-clock fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="OLX">
+										OL
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/blend-am-ol">AutomartOLX</a></h5>
+								<div>Created <b>Oct 15, 2017 08:48</b></div>
+							</td>
+							<td>
+								<div>Last synced: <b>Dec 13, 2017 9:48 am</b></div>
+								<div class="text-truncate">Sync status: <a href="/new-blend" class="badge badge-pill badge-warning"><i class="fas fa-exclamation-triangle"></i> Blendr issue</a></div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">9</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td class="text-center">
+								<div class="mixer small">
+									<div class="ingedient error" data-toggle="tooltip" data-placement="top" title="IX">
+										IX
+									</div>
+									<div class="blade" data-toggle="tooltip" data-placement="top" title="Keep changes">
+										<i class="fas fa-tasks fa-lg"></i>
+									</div>
+									<div class="ingedient" data-toggle="tooltip" data-placement="top" title="AM">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/blend-ix-am">IxAutomart</a></h5>
+								<div>Created <b>Jul 15, 2017 08:48</b></div>
+							</td>
+							<td>
+								<div>Last synced: <b>Dec 13, 2017 9:48 am</b></div>
+								<div class="text-truncate">Sync status: <a href="javascript:void(0)" data-toggle="modal" data-target="#connectionModal" class="badge badge-pill badge-danger"><i class="fas fa-exclamation-circle"></i> Fix IX Connection</a></div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">3</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td class="text-center">
+								<div class="mixer small synced">
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="Mascus">
+										MS
+									</div>
+									<div class="blade blade-left blade-right active" data-toggle="tooltip" data-placement="top" title="Keep changes">
+										<i class="fas fa-tasks fa-lg"></i>
+									</div>
+									<div class="ingedient active" data-toggle="tooltip" data-placement="top" title="AM">
+										AM
+									</div>
+								</div>
+							</td>
+							<td>
+								<h5><a href="/blend-ma-am">MascusAutomart</a></h5>
+								<div>Created <b>Jul 15, 2017 08:48</b></div>
+							</td>
+							<td>
+								<div>Last synced: <b>Dec 13, 2017 9:48 am</b></div>
+								<div class="text-truncate">Sync status: <div class="badge badge-pill badge-success"><i class="fas fa-check-circle"></i> Blend is Goooood!</div></div>
+							</td>
+							<td>
+								<div class="row">
+									<div class="col">
+										<h5><a href="javascript:void(0)">3</a></h5>
+										<div><i class="fas fa-exchange-alt"></i> Changes</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	        </div>
+        </div>
+        <div class="tab-pane fade" id="activity" role="tabpanel">
+            <div class="container">
+				<ul class="activity">
+					<li>
+						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+						<h3>Service connected</h3>
+						<p>Dec 15, 2017 14:21 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-comment-alt fa-lg"></i></div>
+						<h3>Feed requested</h3>
+						<p>Dec 15, 2017 10:32 am</p>
+					</li>
+					<li>
+						<div class="bg-danger"><i class="fas fa-plug fa-lg text-white"></i></div>
+						<h3>Service disconnected</h3>
+						<p>Dec 15, 2017 08:48 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-pencil-alt fa-lg"></i></div>
+						<h3>Service edited</h3>
+						<p>Dec 13, 2017 14:28 am</p>
+					</li>
+					<li>
+						<div class="bg-success"><i class="fas fa-check fa-lg text-white"></i></div>
+						<h3>Service connected</h3>
+						<p>Dec 10, 2017 08:48 am</p>
+					</li>
+					<li>
+						<div><i class="fas fa-comment-alt fa-lg"></i></div>
+						<h3>Feed requested</h3>
+						<p>Dec 11, 2017 10:32 am</p>
+					</li>
+					<li>
+						<div class="bg-info"><i class="fas fa-plus fa-lg text-white"></i></div>
+						<h3>Service created</h3>
+						<p>Dec 9, 2017 10:28 am</p>
+					</li>
+				</ul>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="settings" role="tabpanel">
+	        <div class="container">
+	            <table class="table mc-table"> 
+					<tbody> 
+						<tr>
+					        <th>Service name</th> 
+					        <td>@ViewData["Title"]</td> 
+					    </tr> 
+						<tr> 
+							<th>Service URL</th>
+							<td>
+								<span data-mc-el="archiveUrlPane">
+									<a href="">https://{{serverURL}}/UsedVehicleStock?DealershipID_FK={{use DealershipID_PK from Dealerships call}}</a> 
+									<button class="btn btn-light btn-sm">Edit</button> 
+								</span> 
+							</td>  
+						</tr> 
+				        <tr> 
+					        <th>Create date</th> 
+					        <td>Dec 15, 2017 08:48 am</td>  
+					    </tr>
+				        
+					    <tr> 
+						    <th>Last run</th> 
+						    <td>Dec 18, 2017 08:48 am</td> 
+						</tr>
+				        <tr> 
+					        <th>Service Owner</th> 
+					        <td>@ViewData["Title"]</td> 
+					    </tr>
+				        <tr> 
+					        <th>Service Stock</th> 
+					        <td>Used Vehicle Stock</td> 
+					    </tr> 
+					    <tr> 
+						    <th>Solution</th>
+							<td>REST API: ASP.net (C#)</td>   
+						</tr> 
+					</tbody> 
+				</table>
+	        </div>
+        </div>
+    </div>
+	
+</div>
+
+
+
+
+@section Scripts {
+}

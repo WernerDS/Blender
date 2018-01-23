@@ -5,7 +5,23 @@
 	}
 	td {
 		vertical-align: middle;
+		&:first-child {
+			text-align: right;
+		}
+		&:last-child {
+			
+		}
 	}
+	
+	th {
+		vertical-align: middle !important;
+		img {
+			width: 120px;
+			margin: 0 auto;
+			max-height: 50px;
+		}
+	}
+	
 	/* draggable targets */
 	[data-draggable="target"] {
 		margin: 0;

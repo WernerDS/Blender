@@ -1,252 +1,212 @@
 ﻿@{
     ViewData["Title"] = "Search/Create";
 }
-<div class="section" id="searchService">
+
+<div class="section main-services">
 	<div class="container">
 		
-		<div class="row mb-4">
-			<div class="col text-center">
-				<div class="badge badge-pill badge-secondary mx-auto">Step 1 of 2</div>
-			</div>
-		</div>
-		
-		<div class="row mb-4">
-			<div class="col-md-6 text-center mb-2">
-				<div class="search mb-3">
-					<input type="text" class="form-control form-control-lg" id="" placeholder="search services...">
+		<div id="searchService">
+			
+			<div class="row mb-4">
+				<div class="col text-center">
+					<div class="badge badge-pill badge-secondary mx-auto">Step 1 of 2</div>
 				</div>
 			</div>
-			<div class="col-md-6 text-center mb-2">
-				<div class="paste mb-3">
-					<input type="text" class="form-control form-control-lg" id="" placeholder="api url...">
+		
+			<div class="row mb-4">
+				<div class="col-md-3 text-center mb-2">
+					<div class="search mb-3">
+						<input type="text" class="form-control form-control-lg" id="" placeholder="search services...">
+					</div>
+				</div>
+				<div class="col-md-3 text-center mb-2">
+					<div class="radio-inline">
+						<label>
+							<input class="filter-all" type="radio" value="all" name="service" id="service-all" checked /> All
+						</label>
+					</div>
+					<div class="radio-inline">
+						<label>
+							<input class="filter" type="radio" value="send" name="service" id="service-send" /> Send Only
+						</label>
+					</div>
+				</div>
+				<div class="col-md-3 text-center mb-2">
+					<button class="btn btn-danger" onclick="resetList();">Clear</button>
+				</div>
+				<div class="col-md-3 text-center mb-2">
+					<div class="paste mb-3">
+						<input type="text" class="form-control form-control-lg" id="" placeholder="api url...">
+					</div>
 				</div>
 			</div>
-		</div>
-		
-		<ul class="list">
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-mascus fa-5x service-logo"></i>
-					<h6 class="feed-name">Mascus</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-ix fa-5x service-logo"></i>
-					<h6 class="feed-name">IX</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-toyota fa-5x service-logo"></i>
-					<h6 class="feed-name">Toyota</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-privateproperty fa-5x service-logo"></i>
-					<h6 class="feed-name">Private Property</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-evernote fa-5x service-logo"></i>
-					<h6 class="feed-name">Evernote</h6>
-				</a>
-			</li>
-			<li class="free">
-				<a href="javascript:void(0)">
-					<i class="logo-ananzi fa-5x service-logo"></i>
-					<h6 class="feed-name">Ananzi</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-indeed fa-5x service-logo"></i>
-					<h6 class="feed-name">Indeed</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-junkmail fa-5x service-logo"></i>
-					<h6 class="feed-name">Junk Mail</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-imperialselect fa-5x service-logo"></i>
-					<h6 class="feed-name">Imperial Select</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-jobmail fa-5x service-logo"></i>
-					<h6 class="feed-name">Job Mail</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-hyundai fa-5x service-logo"></i>
-					<h6 class="feed-name">Hyundai</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-property24 fa-5x service-logo"></i>
-					<h6 class="feed-name">Property 24</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-dunquip fa-5x service-logo"></i>
-					<h6 class="feed-name">Dunquip</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-truckandtrailer fa-5x service-logo"></i>
-					<h6 class="feed-name">Truck and Trailer</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-automart fa-5x service-logo"></i>
-					<h6 class="feed-name">Auto Mart</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-carfind fa-5x service-logo"></i>
-					<h6 class="feed-name">Car Find</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-barloworld fa-5x service-logo"></i>
-					<h6 class="feed-name">Barloworld</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-barloworld fa-5x service-logo"></i>
-					<h6 class="feed-name">Barloworld Commercial</h6>
-				</a>
-			</li>
-<!--
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-callacar fa-5x service-logo"></i>
-					<h6 class="feed-name">Call a Car</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-vehicletraders fa-5x service-logo"></i>
-					<h6 class="feed-name">Vehicle Traders</h6>
-				</a>
-			</li>
--->
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-autoslm fa-5x service-logo"></i>
-					<h6 class="feed-name">Auto SLM</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-olx fa-5x service-logo"></i>
-					<h6 class="feed-name">OLX</h6>
-				</a>
-			</li>
-			<li class="free">
-				<a href="javascript:void(0)">
-					<i class="logo-gumtree fa-5x service-logo"></i>
-					<h6 class="feed-name">Gumtree</h6>
-				</a>
-			</li>
-<!--
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-carshophub fa-5x service-logo"></i>
-					<h6 class="feed-name">Carshop Hub</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-dealerstockcontrol fa-5x service-logo"></i>
-					<h6 class="feed-name">Dealer Stock Control</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-vmg fa-5x service-logo"></i>
-					<h6 class="feed-name">Vmg</h6>
-				</a>
-			</li>
--->
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-imperialauto fa-5x service-logo"></i>
-					<h6 class="feed-name">Imperial Auto</h6>
-				</a>
-			</li>
-<!--
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-autofuzion fa-5x service-logo"></i>
-					<h6 class="feed-name">Auto Fuzion</h6>
-				</a>
-			</li>
--->
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-mascus fa-5x service-logo"></i>
-					<h6 class="feed-name">Mascus Exports</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-dunquip fa-5x service-logo"></i>
-					<h6 class="feed-name">Dunquip</h6>
-				</a>
-			</li>
-<!--
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-autoxloo fa-5x service-logo"></i>
-					<h6 class="feed-name">Autoxloo</h6>
-				</a>
-			</li>
--->
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-ix fa-5x service-logo"></i>
-					<h6 class="feed-name">IX Trucks</h6>
-				</a>
-			</li>
-<!--
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-clearasset fa-5x service-logo"></i>
-					<h6 class="feed-name">ClearAsset</h6>
-				</a>
-			</li>
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-integra fa-5x service-logo"></i>
-					<h6 class="feed-name">Integra</h6>
-				</a>
-			</li>
--->
-			<li>
-				<a href="javascript:void(0)">
-					<i class="logo-ix fa-5x service-logo"></i>
-					<h6 class="feed-name">IX New</h6>
-				</a>
-			</li>
 				
-		</ul>
-		
+			<ul class="list">
+				<li data-service="send">
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/mascus.svg">
+						<h6 class="feed-name">Mascus</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/ix.svg">
+						<h6 class="feed-name">IX</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/toyota.svg">
+						<h6 class="feed-name">Toyota</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/privateproperty.svg">
+						<h6 class="feed-name">Private Property</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/evernote.svg">
+						<h6 class="feed-name">Evernote</h6>
+					</a>
+				</li>
+				<li class="free">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/ananzi.svg">
+						<h6 class="feed-name">Ananzi</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/indeed.svg">
+						<h6 class="feed-name">Indeed</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/junkmail.svg">
+						<h6 class="feed-name">Junk Mail</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/imperialselect.svg">
+						<h6 class="feed-name">Imperial Select</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/jobmail.svg">
+						<h6 class="feed-name">Job Mail</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/hyundai.svg">
+						<h6 class="feed-name">Hyundai</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/property24.svg">
+						<h6 class="feed-name">Property 24</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/dunquip.svg">
+						<h6 class="feed-name">Dunquip</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/truckandtrailer.svg">
+						<h6 class="feed-name">Truck and Trailer</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/automart.svg">
+						<h6 class="feed-name">Auto Mart</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/carfind.svg">
+						<h6 class="feed-name">Car Find</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/barloworld.svg">
+						<h6 class="feed-name">Barloworld</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/barloworld.svg">
+						<h6 class="feed-name">Barloworld Commercial</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/autoslm.svg">
+						<h6 class="feed-name">Auto SLM</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" class="disabled">
+						<img src="~/images/logos/olx.svg">
+						<h6 class="feed-name">OLX</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/gumtree.svg">
+						<h6 class="feed-name">Gumtree</h6>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/imperialauto.svg">
+						<h6 class="feed-name">Imperial Auto</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/mascus.svg">
+						<h6 class="feed-name">Mascus Exports</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/dunquip.svg">
+						<h6 class="feed-name">Dunquip</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/ix.svg">
+						<h6 class="feed-name">IX Trucks</h6>
+					</a>
+				</li>
+				<li data-service="send">
+					<a href="javascript:void(0)">
+						<img src="~/images/logos/ix.svg">
+						<h6 class="feed-name">IX New</h6>
+					</a>
+				</li>
+			</ul>
+				
+			
+			<div class="no-result d-none">No Results</div>
+			<ul class="pagination d-none"></ul>
+			
+			
+		</div>
+			
 		<h4 class="text-center">Find by industry/category</h4>
 		
 		<div class="industries">		
@@ -276,7 +236,7 @@
 			<p class="mx-auto"><a href="/search-all">Show all Services</a></p>
 			<p class="mx-auto">Couldn't find what you were looking for? <a href="/suggest-service">Suggest a new Service!</a></p>
 		</div>
-		
+			
 	</div>
 </div>
 
@@ -286,6 +246,13 @@
 		<button type="button" class="btn btn-outline-secondary top-left-btn" id="backToSearch"><i class="fa fa-chevron-left"></i> Back</button>
 		<div class="row mb-4">
 			<div class="col-md-6 mx-auto text-center">
+				
+				<div class="mb-3">
+					<i class="icon-blender fa-3x"></i>
+					<i class="fas fa-exchange-alt fa-2x text-muted"></i>
+					<img src="~/images/logos/automart.svg" style="height: 48px;vertical-align: top;">
+				</div>
+				
 				<div class="badge badge-pill badge-secondary mx-auto">Step 2 of 2</div>
 				<h4 class="text-center mt-4">Account URL</h4>
 				<div class="mb-4">
@@ -300,32 +267,79 @@
 					<input type="text" class="form-control form-control-lg mb-2" id="" placeholder="username...">
 					<input type="text" class="form-control form-control-lg" id="" placeholder="password...">
 				</div>
-				<a href="/service" class="btn btn-primary mt-2">Connect</a>
+				<a href="/service-automart" class="btn btn-primary mt-2">Connect</a>
 			</div>
 		</div>
 	</div>
 </section>
 
+
 @section Scripts {
 	<script src="~/js/list.min.js"></script>
 	<script>
 		var options = {
-		  valueNames: [ 'feed-name' ]
+			valueNames: [
+				'feed-name',
+				{ data: ['service']}
+			],
+			page: 40,
+			pagination: false
 		};
 		var userList = new List('searchService', options);
+		
+		function resetList(){
+			userList.search();
+			userList.filter();
+			userList.update();
+			$(".filter-all").prop('checked', true);
+			$('.filter').prop('checked', false);
+			$('.search').val('');
+			//console.log('Reset Successfully!');
+		};
+		  
+		function updateList(){
+		  var values_service = $("input[name=service]:checked").val();
+			console.log(values_service);
+		
+			userList.filter(function (item) {
+				var serviceFilter = false;
+				
+				if(values_service == "all")
+				{ 
+					serviceFilter = true;
+				} else {
+					serviceFilter = item.values().service == values_service;
+					
+				}
+				return serviceFilter
+			});
+			userList.update();
+			//console.log('Filtered: ' + values_service);
+		}
+		                               
+		$(function(){
+		  //updateList();
+		  $("input[name=service]").change(updateList);
+			
+			userList.on('updated', function (list) {
+				if (list.matchingItems.length > 0) {
+					$('.no-result').hide()
+				} else {
+					$('.no-result').show()
+				}
+			});
+		});
 	</script>
-	<script src="~/js/typeahead.jquery.min.js"></script>
-	<script src="~/js/typeahead.services.js"></script>
 	
 	<script>
 		$('#searchService .list a').click( function() {
 		    $('#connectHere').removeClass('d-none')
-		    $('#searchService').addClass('d-none')
+		    $('.main-services').addClass('d-none')
 		});
 		
 		$('#backToSearch').click( function() {
 		    $('#connectHere').addClass('d-none')
-		    $('#searchService').removeClass('d-none')
+		    $('.main-services').removeClass('d-none')
 		});
 	</script>
 }

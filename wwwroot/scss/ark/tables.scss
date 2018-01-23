@@ -1,5 +1,14 @@
 .table {
 	th, td {
-		vertical-align: middle;
+		vertical-align: middle !important;
+	}
+}
+
+.changes-table {
+	td {
+		.truncate {
+			width: 200px;
+			@extend .text-truncate;
+		}
 	}
 }
