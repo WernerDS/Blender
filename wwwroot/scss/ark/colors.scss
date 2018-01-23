@@ -53,6 +53,17 @@ $bg-google: 		  #DB3236;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.error-gradient {
+	background: linear-gradient($gradient-degree,darken($danger,10%),$danger);
+}
+.warning-gradient {
+	background: linear-gradient($gradient-degree,darken($warning,10%),$warning);
+}
+.sync-gradient {
+	background: linear-gradient($gradient-degree,$gray-400,$gray-600);
+}
+
 .stripes {
     width: 100%;
     height: 100%;
